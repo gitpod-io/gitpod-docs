@@ -21,7 +21,7 @@
     "build": "gitbook build doc site/doc",
     "watch": "npm-watch",
     "check": "blc http://localhost:8080 -ro --exclude http://localhost:3000 --exclude https://localhost:3000",
-    "do-serve": "npx http-server -c-1 site",
+    "do-serve": "npx http-server -c-1 site/doc",
     "serve": "concurrently \"npm run watch\" \"npm run do-serve\""
   },
   "repository": {

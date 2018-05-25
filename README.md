@@ -3,7 +3,7 @@
 ## Development
 ```
 npm install
-npm run do-serve
+npm run serve
 ```
 
 ## Build 
