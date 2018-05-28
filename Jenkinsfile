@@ -29,6 +29,9 @@ podTemplate(
                 sh("yarn run build")
                 archiveArtifacts(artifacts: 'site/**/*')
             }
+            stage('check') {
+                sh("npm run do-serve & npm run check")
+            }
             if(env.BRANCH_NAME == "published") {
                 stage("gcloud") {
                     withCredentials([file(credentialsId: 'gitpod-publish-static-web-pages', variable: 'gkey')]) {
