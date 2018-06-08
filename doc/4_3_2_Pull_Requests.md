@@ -55,7 +55,11 @@ Excellent, this is what we wanted to change. Add your file to the Git index by s
 
 ![](./images/4_3_2_Pull_Requests/commit_your_changes.jpg)
 
-You can see, the last commit has been updated in the bottom of the `Git` view. It shows our changes. You can also see in the status bar, you have one outgoing change. Let's push the commit to the remote. Click on the `...` action right below the commit message input and select `Push...`. As always, alternatively, you can use the `Git: Push...` command from the Command Palette.
+You can see, the last commit has been updated in the bottom of the `Git` view. It shows our changes.
+
+![](./images/4_3_2_Pull_Requests/latest_commit.jpg)
+
+Check the status bar too: you have one outgoing change. Let's push the commit to the remote. Click on the `...` action right below the commit message input and select `Push...`. As always, alternatively, you can use the `Git: Push...` command from the Command Palette.
 
 ![](./images/4_3_2_Pull_Requests/push_your_changes.jpg)
 
