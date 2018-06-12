@@ -1,0 +1,15 @@
+{% extends template.self %}
+
+{% block head %}
+    <link rel="shortcut icon" href="../imgages/favicon.ico">
+    {{ super() }}
+{% endblock %}
+
+{% block body %}
+<div style="background-color: #2b2e34">
+<a href="../index.html" class="logo__link">
+    <img class="logo" style="width: 150px; padding: 10px" src="images/gitpod-logo.svg" alt="logo">
+</a>
+</div>
+    {{ super() }}
+{% endblock %}
