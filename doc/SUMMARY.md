@@ -1,10 +1,6 @@
 # Contents
 * [Introduction](README.md)
-
-## Basics
-* [Gitpod - How it Works](1_1_Gitpod.md)
 * [Workspaces](1_2_Workspaces.md)
-* [Navigating the Code](1_3_Navigating_The_Code.md)
 
 ## Browser Extension
 * [Browser Extension](2_Browser_Extension.md)
@@ -16,6 +12,7 @@
 
 ## Theia IDE
 * [Command Pallette](4_1_Command_Palette.md)
+* [Navigating the Code](4_1_1_Navigating_The_Code.md)
 * [Editor Features](4_2_Editor_Features.md)
 * [Git & GitHub Integration](4_3_Git_and_GitHub_Integration.md)
   * [Authoring Commits](4_3_1_Authoring_Commits.md)
