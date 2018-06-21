@@ -6,10 +6,12 @@
 {% endblock %}
 
 {% block body %}
-<div style="background-color: #2b2e34">
-<a href="../index.html" class="logo__link">
-    <img class="logo" style="width: 150px; padding: 10px" src="images/gitpod-logo.svg" alt="logo">
-</a>
-</div>
+<div class="body-root">
+    <div class="banner">
+        <a href="../index.html" class="logo__link">
+            <img class="logo" src="images/gitpod-logo.svg" alt="logo">
+        </a>
+    </div>
     {{ super() }}
+</div>
 {% endblock %}

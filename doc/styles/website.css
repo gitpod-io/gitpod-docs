@@ -1,0 +1,14 @@
+.logo {
+    width: 150px; 
+    padding: 10px;
+}
+
+.banner {
+    background-color: #2b2e34;
+    width: 100%;
+}
+
+.body-root {
+    overflow: hidden;
+    height: 100%;
+}
