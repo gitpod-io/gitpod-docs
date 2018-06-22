@@ -8,3 +8,5 @@ The extension simply adds a button to GitHub, which does the prefixing for you. 
 We provide one for 
   - [Chrome](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki) and 
   - [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/gitpod/).
+
+![Browser Extension](images/2_Browser_Extension/tab2.jpg)
