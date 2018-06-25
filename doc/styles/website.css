@@ -12,3 +12,7 @@
     overflow: hidden;
     height: 100%;
 }
+
+.book {
+    height: calc(100% - 70px);
+}
