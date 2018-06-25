@@ -1,31 +1,24 @@
 # Contents
 * [Introduction](README.md)
-* [Getting Started](1_1_Getting_Started.md)
-* [Workspaces](1_2_Workspaces.md)
-* [Dashboard](1_3_Dashboard.md)
-
-## Browser Extension
-* [Browser Extension](2_Browser_Extension.md)
-
-## Workspace Configuration
-* [Docker Images](3_1_Docker_Images.md)
-* [Exposing Ports](3_2_Exposing_Ports.md)
-* [Start Scripts](3_3_Start_Scripts.md)
-
-## Theia IDE
-* [Command Pallette](4_1_Command_Palette.md)
-* [Navigating the Code](4_1_1_Navigating_The_Code.md)
-* [Editor Features](4_2_Editor_Features.md)
-* [Git & GitHub Integration](4_3_Git_and_GitHub_Integration.md)
-  * [Authoring Commits](4_3_1_Authoring_Commits.md)
-  * [Creating Pull Requests](4_3_2_Pull_Requests.md)
-  * [Code Reviews](4_3_3_Code_Reviews.md)
-* [Search in Workspace](4_4_Search.md)
-* [Debugging Node](4_5_Debugging_Node.md)
-
-## Collaboration
+* [Getting Started](10_Getting_Started.md)
+* [Browser Extension](20_Browser_Extension.md)
+* [Workspaces](30_Workspaces.md)
+* [Configuring Workspaces](40_Configuration.md)
+    * [`.gitpod` file](40_Configuration.md#gitpod-file)
+    * [Docker Image](40_Configuration.md#docker-image)
+    * [Exposing Ports](40_Configuration.md#exposing-ports)
+    * [Start Script](40_Configuration.md#start-script)
+* [Theia IDE](50_IDE.md)
+    * [Tips & Tricks](52_Tips_and_Tricks.md)
+    * [Navigating the Code](4_1_1_Navigating_The_Code.md)
+    * [Editor Features](4_2_Editor_Features.md)
+    * [Git & GitHub Integration](4_3_Git_and_GitHub_Integration.md)
+    * [Authoring Commits](4_3_1_Authoring_Commits.md)
+    * [Creating Pull Requests](4_3_2_Pull_Requests.md)
+    * [Code Reviews](4_3_3_Code_Reviews.md)
+    * [Search in Workspace](4_4_Search.md)
+    * [Debugging Node](4_5_Debugging_Node.md)
 * [Collaboration](5_Collaboration.md)
-
-## Subsriptions
-* [Subscriptions](6_Subscriptions.md)
+* [Dashboard](60_Dashboard.md)
+* [Subscriptions](70_Subscriptions.md)
 
