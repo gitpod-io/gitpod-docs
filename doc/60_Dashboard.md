@@ -22,7 +22,7 @@ _Starting_, _Stopping_, _Last run_),
 Workspaces can be started, stopped, or opened using the respective buttons.
 
 You can also allow/disallow sharing of a workspace by clicking the lock icon. See the 
-section on [collaboration](5_Collaboration.md) for details about sharing workspaces.
+section on [collaboration](30_Workspaces.md#shared-workspaces) for details about sharing workspaces.
 
 ### Archived workspaces
 
