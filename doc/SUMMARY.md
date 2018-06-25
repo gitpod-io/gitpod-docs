@@ -16,7 +16,7 @@
     * [Editor](53_Editor.md)
     * [Git](54_Git.md)
     * [Search](56_Search.md)
-    * [Navigating the Code](4_1_1_Navigating_The_Code.md)
+#    * [Navigating the Code](4_1_1_Navigating_The_Code.md)
     * [Creating Pull Requests](4_3_2_Pull_Requests.md)
     * [Code Reviews](4_3_3_Code_Reviews.md)
 * [Dashboard](60_Dashboard.md)
