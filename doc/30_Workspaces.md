@@ -71,6 +71,25 @@ Gitpod always syncs the current state of the workspace's repository in the cloud
 you can revisit it later. Files in other locations will not be saved. Gitpod does not delete 
 any of these workspaces. See [dashboard](60_Dashboard.md) for details.
 
-## Sharing Workspaces
-Workspaces can also be shared with other users. See the section on [collaboration](5_Collaboration.md) 
-for details.
+## Shared Workspaces
+Workspaces can be shared from the [dashboard](60_Dashboard.md) or from within the IDE.
+In the IDE, right-click on the user's avatar and choose **Share Workspace**. The URL you can share with your colleague
+is shown in the dialog.
+
+![](./images/share-workspace.png)
+
+Anybody with this URL and a Gitpod account will be able to access the workspace as long as it is shared and running. 
+By unsharing the workspace, the link becomes useless to anybody but the workspace owner. 
+All users that are currently logged in to the same workspace will be shown as avatars 
+in the top right corner of the IDE. So you always know how is looking at your workspace.
+
+Guests share the same Theia backend, including the filesystem and the terminals that the 
+host had opened when they entered the workspace. Opened editors, editor content, and 
+other UI state are currently not shared. 
+
+**Security note: Since the git command in the workspace is configured with your personal GitHub token, it is shared, too! **
+
+So every action towards GitHub in a shared workspace happens on behalf 
+of the workspace owner's GitHub account without further authorization. It is highly recommended to only 
+share workspace URLs with trusted others and unshare workspaces when sharing is no 
+longer necessary. A Gitpod workspace really is your personal machine.

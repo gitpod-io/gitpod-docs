@@ -1,10 +1,12 @@
-# Git & GitHub Integration
+# Git Integration
 
-Theia ships with a Git extension.
+Theia ships with a couple of Git-related features. Please note that these are all meant to be
+convenient UIs on top of the command line `git`, which is available in the terminal as well.
 
-## Git View
+## Authoring Commits
 
-Theia ships with a Git extension. You can activate the `Git` view from the `View` > `Git` menu or with the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> on macOS) keybinding.
+The Git view is automatically added to the left panel. If you have accidentally closed it, you can activate it from the `View` > `Git` menu 
+or with the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> on macOS) keybinding.
 
 The `Git` view consists of three major parts. The top section is for authoring the commit messages. It also provides access to a couple of basic Git commands.
 
