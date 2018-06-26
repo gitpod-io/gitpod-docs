@@ -13,7 +13,7 @@ By default, the dashboard shows you a list of your workspaces and their current 
 The list is sorted by relevance (running workspaces first). It can be searched using the 
 search field.
 
-![a workspace entry](images/1_3_Dashboard/workspace-entry.png)
+![a workspace entry](images/workspace-entry.png)
 
 Each entry provides information about the workspace's name, creation date, workspace 
 context (repository, branch, commit ID, issue or pull-request), execution state (e.g. 

@@ -16,8 +16,8 @@
     * [Editor](53_Editor.md)
     * [Git](54_Git.md)
     * [Search](56_Search.md)
-    * [Creating Pull Requests](4_3_2_Pull_Requests.md)
-    * [Code Reviews](4_3_3_Code_Reviews.md)
+    * [Creating Pull Requests](58_Pull_Requests.md)
+    * [Code Reviews](59_Code_Reviews.md)
 * [Dashboard](60_Dashboard.md)
 * [Subscriptions](70_Subscriptions.md)
 

@@ -8,14 +8,14 @@ The command palette is the center for a keyboard-centric interaction as well as 
  - <kbd>F1</kbd> 
  - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on macOS)
 
-![](./images/4_1_Command_Palette/command_palette.jpg)
+![](./images/command_palette.jpg)
 
 ### The Command Palette is Contextual
 
 The **Command Palette** contains all commands that are available from the application. Many of the accessible commands are context dependent. 
 That means only those commands are visible that are active at the moment. For example, the `Go To Line...` command is only available when a code editor is opened and has focus.
 
-![](./images/4_1_Command_Palette/go_to_line_w_editor.jpg)
+![](./images/go_to_line_w_editor.jpg)
 
 ## Color Themes
 

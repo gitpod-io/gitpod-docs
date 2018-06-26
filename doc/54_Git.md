@@ -10,15 +10,15 @@ or with the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd> (<kbd>Ctrl</kbd>+<kbd>
 
 The `Git` view consists of three major parts. The top section is for authoring the commit messages. It also provides access to a couple of basic Git commands.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_commit_message.jpg)
+![](./images/54_Git/git_commit_message.jpg)
 
 Right below the commit section, the changed files with their names are listed in two groups: these a the `STAGED CHANGES` and `CHANGES`. The latter one groups all unstaged, changed resources.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_file_changes.jpg)
+![](./images/54_Git/git_file_changes.jpg)
 
 At the bottom of the `Git` view, a small section gives a quick insight into the most recent commit.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_last_commit.jpg)
+![](./images/54_Git/git_last_commit.jpg)
 
 In the list of staged and unstaged changes, the file names are followed by the path to their container folder and an indicator describing the type of the change. These are the followings:
  - `A`: new staged,
@@ -42,7 +42,7 @@ The dirty indicators are the followings:
  - `+` You have staged changes in your branch.
  - `!` You have conflicting changes in your branch.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_status_bar.jpg)
+![](./images/54_Git/git_status_bar.jpg)
 
 By clicking on the branch name, you can perform a `git checkout`. This operation is equivalent to the `Git: Checkout...` command from the Command Palette.
 
@@ -50,11 +50,11 @@ There is a `Synchronize Changes` action as well in the status bar, next to the b
 
 ## Branches and Tags
 
-![](./images/4_3_Git_and_GitHub_Integration/git_checkout_command.jpg)
+![](./images/54_Git/git_checkout_command.jpg)
 
 You can create and checkout branches directly within Theia through the `Git: Checkout...` command in the Command Palette. For creating a new branch, select the first item, `Create new branch...` from the list and specify the desired name of your branch. Theia creates the new branch for you and switches to it.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_checkout_branches.jpg)
+![](./images/54_Git/git_checkout_branches.jpg)
 
 ## Gutter Indicators
 
@@ -64,25 +64,25 @@ If you open a file in an editor that is under version control by Git, and start 
  - A green bar shows the newly added lines.
  - A blue bar indicates modified lines.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_gutter.jpg)
+![](./images/54_Git/git_gutter.jpg)
 
 ## Blame Annotations
 
 You can show the blame annotation by either selecting the `Show Blame Annotations` from the editor's context menu or by picking `Git: Show Blame Annotations` from the Command Palette. This will show the blame annotations on the left hand-side of the editor. Press <kbd>Esc</kbd> if you want to hide the blame annotations.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_blame_annotations.jpg)
+![](./images/54_Git/git_blame_annotations.jpg)
 
 ## Merge conflicts
 
 Theia recognizes merge conflicts. Theia highlights the differences and provides inline action to accept either the local or the incoming change. Alternatively, both modifications can be accepted at the same time. Once you have resolved the conflicts, stage your changes and commit it.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_merge_conflicts.jpg)
+![](./images/54_Git/git_merge_conflicts.jpg)
 
 ## Viewing Diffs
 
 The Git extension supports viewing of diff withing Theia. Selecting any of the modified files will open a diff editor. As discussed earlier, the left-hand side is a read-only editor representing the index state, and the right-hand side editor is the working tree.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_diff.jpg)
+![](./images/54_Git/git_diff.jpg)
 
 ## Git History
 
@@ -95,5 +95,5 @@ You can activate the `Git History` view from the `View` > `Git History` menu or 
 
 The top of the `Git History` view shows the path of the resource or resources. Right below the path, you can see the list of commits with some details; such as the committer, the subject of the commit message and the relative time of the commit. You can open up the commit in a read-only editor to review all the details about the commit.
 
-![](./images/4_3_Git_and_GitHub_Integration/git_history.jpg)
+![](./images/54_Git/git_history.jpg)
 
