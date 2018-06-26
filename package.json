@@ -18,7 +18,7 @@
     "build": "doc/**/*.*"
   },
   "scripts": {
-    "build": "gitbook build doc site/doc",
+    "build": "sh resample-images.sh && gitbook build doc site/doc",
     "watch": "npm-watch",
     "check": "blc http://localhost:8080 -ro --exclude http://localhost:3000 --exclude https://localhost:3000",
     "do-serve": "npx http-server -c-1 site/doc",
