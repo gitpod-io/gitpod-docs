@@ -1,7 +1,7 @@
 # Theia - Gitpod's IDE
 
-The IDE in Gitpod is based on the open-source project Theia. It is hosted and developed under the umbrella of the Eclipse Foundation, which ensures vendor neutrality 
-and emphasizes diversity. Many core committers and contributors in fact use Gitpod to develop Theia or review PRs. 
+The IDE in Gitpod is based on the open-source project [Theia](https://theia-ide.org). It is hosted and developed under the umbrella of the Eclipse Foundation, which ensures vendor neutrality 
+and emphasizes diversity.
 
 ## Overview
 
