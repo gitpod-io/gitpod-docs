@@ -1,13 +1,13 @@
 # Workspaces
 
-A Gitpod workspace can be created from any GitHub project, branch, issue or pull-request.
+A Gitpod workspace can be created from any GitHub project, branch, issue or pull request.
 Very soon Gitpod will support additional platforms and integrations for GitLab, Bitbucket, and Jira. 
 
 # Context URLs
 
 Gitpod derives the context of the workspace from the URL of the repository page from which it 
 was started. Different issues, pull requests, or branches will result in separate workspaces,
-allowing to easily perform individual tasks in their own isolated environments.
+allowing developers to easily perform individual tasks in their own isolated environments.
 
 Each workspace consists of a full Linux container. From the IDE's terminal, the user can directly access 
 all development tools of the Linux system and even install missing ones.
@@ -16,8 +16,8 @@ In the following we describe the supported contexts and what they do:
 
 ## GitHub Project Context
 
-Creating a Gitpod workspace from the main project URL, will not imply a lot of contextual information. You will end up
-in the master state with a local master branch. And the `Readme.md` will be opened in preview if it exists.
+Creating a Gitpod workspace from the project's base URL will not imply a lot of contextual information. You will end up
+in the master state with a local master branch and the `Readme.md` will be opened in preview if it exists.
 
 An example for this context would be `https://github.com/arunoda/learnnextjs-demo`.
 
@@ -28,25 +28,25 @@ and open the editor you are looking at.
 
 An example for this context would be `https://github.com/arunoda/learnnextjs-demo/blob/getting-started/pages/index.js`.
 
-When pointing to a folder, e.g. `https://github.com/arunoda/learnnextjs-demo/tree/create-dynamic-pages/pages` the containing `Readme.md``
-will be opened when existing.
+When pointing to a folder, e.g. `https://github.com/arunoda/learnnextjs-demo/tree/create-dynamic-pages/pages` the contained `Readme.md`
+will be opened when it exists.
 
 ## GitHub Issue Context
 
 When starting a workspace from a GitHub Issue, a local branch named `GH-{issue-nr}` will be created which is based on the remote's 
 default branch. In most cases that would be `origin/master`.
 
-In addition the Commit message is preconfigured with `fixes #{organization}/{repo}/{issue-nr}`. This will automatically close the GitHub issue, once
+In addition, the commit message is preconfigured with `fixes #{organization}/{repo}/{issue-nr}`. This will automatically close the GitHub issue, once
 such a commit is merged into the default branch.
 
-Once changes have been committed locally, the `Pull Request` view on the right can be used to push changes to a remote repository and create a pull request.
+As soon as changes have been committed locally, the `Pull Request` view on the right can be used to push changes to a remote repository and create a pull request.
 
-## GitHub Pull Request context
+## GitHub Pull Request Context
 
-Starting workspaces from pull requests will of course clone the respective branch and opens the file changes of the respective PR in a viewon the left.
-The first change is opened already in the diff editor. Also the `pull request`-view on the right is configured with the respective information.
+Starting workspaces from pull requests will of course clone the respective branch and open the file changes of the respective PR in a view on the left.
+The first change is opened already in the diff editor. Also the `Pull Request`-view on the right is configured with the respective information.
 
-This context is meant to be used for code reviews and/or to take action on feedback you got from a reviewer.
+This context is meant for code reviews and/or to take action on feedback you got from a reviewer.
 
 # Life of a Workspace
 
@@ -59,7 +59,7 @@ Moving the mouse is enough. If the IDE is still open, a dialog will pop up that 
 the workspace again.
 
 ## Stop and Archive
-If you don't want to waste Gitpod hours unnecessarily you can stop your workspace explicitly. To do so click on the avator in the top right
+If you don't want to waste Gitpod hours unnecessarily you can stop your workspace explicitly. To do so click on the avatar in the top right
 and choose the `Stop Workspace` command (also available through the command palette).
 The dialog will suggest you to also archive the workspace. Archived workspaces will be removed from workspace list in the dashboard and will not be 
 considered when starting a fresh workspace for the same context URL again.

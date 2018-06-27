@@ -21,14 +21,13 @@ At the bottom of the `Git` view, a small section gives a quick insight into the 
 ![](./images/54_Git/git_last_commit.jpg)
 
 In the list of staged and unstaged changes, the file names are followed by the path to their container folder and an indicator describing the type of the change. These are the followings:
- - `A`: new staged,
- - `U`: new unstaged,
- - `R`: renamed,
- - `C`: copied,
- - `M`: modified,
- - `D`: deleted, and
- - `C`: conflicted.
-
+ - `A`: Added (new staged),
+ - `U`: new Unstaged,
+ - `R`: Renamed,
+ - `C`: Copied (blue), Conflicted (red),
+ - `M`: Modified, and
+ - `D`: Deleted.
+ 
 When a stage file is unstaged, its state can be reverted to the state of the working tree by clicking on the `Discard Changes` action right after the file location. However, if the resource is not under version control, it will be deleted from the workspace. Double-clicking on a modified resource will open it in a diff editor. The read-only editor on the left-hand side shows the state from the index. The right-hand side of the editor is the state of the working tree, and it still lets you modify the file. New and deleted files do not open in a diff editor. The files can be staged, added to the index, by clicking on the `Stage Changes` action (`+` sign), the counterpart operation is the `Unstage Changes` action (`-` sign).
 
 After staging the desired files and specifying the commit message. The changes can be committed to the repository. After the successful commit, the `Last Commit` section will be automatically updated.
