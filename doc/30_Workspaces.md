@@ -36,7 +36,7 @@ will be opened when it exists.
 When starting a workspace from a GitHub Issue, a local branch named `GH-{issue-nr}` will be created which is based on the remote's 
 default branch. In most cases that would be `origin/master`.
 
-In addition, the commit message is preconfigured with `fixes #{organization}/{repo}/{issue-nr}`. This will automatically close the GitHub issue, once
+In addition, the commit message is preconfigured with `fixes #{organization}/{repo}#{issue-nr}`. This will automatically close the GitHub issue, once
 such a commit is merged into the default branch.
 
 As soon as changes have been committed locally, the `Pull Request` view on the right can be used to push changes to a remote repository and create a pull request.
