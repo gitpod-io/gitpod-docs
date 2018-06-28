@@ -39,3 +39,17 @@ To search for or replace string occurences in all files of your workspace press:
 - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> (<kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on macOS)
 
 It opens the search view, which is described in more detail [here](56_Search.md).
+
+## Symbols and References
+
+Most languages allow to name things and refer to them in other places, for example variables, 
+functions, classes, modules etc. Gitpod supports this notion of such _symbols_ and _references_
+to them and allows to navigate in both directions: 
+
+- `Open Symbol` (<kbd>CTRL</kbd>-<kbd>SHIFT</kbd>-<kbd>O</kbd>) finds a symbol by its name.
+- `Find All References` (<kbd>SHIFT</kbd>-<kbd>F12</kbd>) lists all references to the symbol 
+at the current position in an inline editor.
+- `Go to Definition` (<kbd>CTRL</kbd>-<kbd>F12</kbd> or <kbd>CTRL/⌘</kbd>-click) brings you to  
+the definition of a symbol. `Peek Definition` (<kbd>ALT</kbd>-<kbd>F12</kbd>) does the same 
+an inline editor
+- `Rename Symbol` (<kbd>F2</kbd>) renames the symbol and all references to it.
