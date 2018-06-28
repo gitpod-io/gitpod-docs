@@ -1,60 +1,50 @@
 # Code Reviews
 
+Let us have a look how we can perform a code review on GitHub with Gitpod. We continue 
+the example from the [previous chapter](58_Pull_Request.md), where we created a pull 
+request (PR). In the role of the reviewer you open this PR on GitHub. Once again, Gitpod
+allows you to simply follow the GitHub flow.
 
+![](images/cr-GitHub-pr.png)
 
-This section gives you a brief introduction to the code review flow with Gitpod. This assumes if you are already [familiar with the pull request (PR) creation process](58_Pull_Requests.md) and you already have a PR ready for the review.
+Just like the creator of the PR, you can start a Gitpod workspace by prefixing the URL 
+or using the `Gitpod` button provided by the [Gitpod browser extension](20_Browser_Extension.md).
+Gitpod spawns a workspace and the IDE is loaded into the browser.
 
-First off, go to your PR on GitHub.
+![](images/cr-gitpod-started.png)
 
-![](./images/59_Code_Reviews/go_to_pr.jpg)
+The initialization task in the repository's [.gitpod file](40_Configuration.md) builds
+and starts the app automatically such that you can test the changes right within Gitpod's 
+`Preview`.
 
-If you are using the Gitpod extension in your browser, click on the Gitpod button it will start your Gitpod workspace with all the changes.
+![](images/cr-preview.png)
 
-![](./images/59_Code_Reviews/click_the_gitpod_button.jpg)
+Gitpod has opened the `Diff` view and the first change in an editor. Using the 
+arrow keys, you can easily browse through the changes and examine them in their 
+context. Applying further changes is easy, as you have a full IDE at your fingertips.
+You can commit them to the PR's branch as described in the section on [Git](54_Git.md).
 
-Otherwise, you need to suffix the `https://gitpod.io/workspaces/` URL with the URL of your PR: `https://gitpod.io/github.com/kittaakos/express-hello-world/pull/1`.
+![](images/cr-diff.png)
 
-![](./images/59_Code_Reviews/suffx_gitpod_with_pr_url.jpg)
+You can also add additional review comments. The `Conversations` view lists all existing 
+review comments and allows to navigate to their locations in the code. Let us use it to 
+answer the question from the creator of the PR.
 
-Once your workspace is up, Gitpod immediately shows you the `Diff` view with all the changes made on the branch.
+![](images/cr-respond-to-comment.png)
 
-![](./images/59_Code_Reviews/changed_files.jpg)
+By clicking `Start a review`, Gitpod creates a review on GitHub and adds our comment. 
+All subsequent comments will be filed into this review. All reviews are listed in the 
+`Pull Request` view. Out-of-band comments and reviews can be synchronized using the 
+synchronize button.
 
-It also opens up the file with the relevant change.
+![](images/cr-pull-request-view.png)
 
-![](./images/59_Code_Reviews/code_change.jpg)
+The review can be finished by pushing the review button. You can add your final verdict 
+and push it to GitHub. 
 
-Let assume, we are not happy with the current change, and we would like to suggest a modification. You can quickly add a comment from the diff editor's gutter. Just click on the `Start New Conversations` button. Note, this functionality works only for those files that were changed in the PR.
+![](images/cr-finish-review.png)
 
-![](./images/59_Code_Reviews/start_new_conversation.jpg)
+If you have approved the PR, you can merge the changes by pushing the `Merge` button 
+in the `Pull Request` view or conventionally on the GitHub website.
 
-Start a new conversation and add some remark as a single comment.
-
-![](./images/59_Code_Reviews/add_a_new_comment.jpg)
-
-Gitpod pushes your new comment to GitHub so everything is in sync.
-
-![](./images/59_Code_Reviews/gh_shows_new_comment.jpg)
-
-Open the `Pull Request` view and click on the `Review Changes` button.
-
-![](./images/59_Code_Reviews/review_changes.jpg)
-
-Request some changes for the PR.
-
-![](./images/59_Code_Reviews/reject.jpg)
-
-Here, we assume, the other user has made all the desired adjustments and pushed the commit to the remote already. When the reviewer opens the changed `main.js` file in the diff editor, it already shows the most recent state of the file.
-
-![](./images/59_Code_Reviews/code_change_after_adjustment.jpg)
-
-Approve the change and the entire PR.
-
-![](./images/59_Code_Reviews/approve.jpg)
-
-You can verify the PR approval on GitHub; everything is in sync with Gitpod.
-
-![](./images/59_Code_Reviews/gh_show_approval.jpg)
-
-There are only two things you have to take care of: push the `Merge` button on GitHub and delete your branch.
-
+![](images/cr-GitHub-pr-finished.png)
