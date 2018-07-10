@@ -1,54 +1,88 @@
 # Configuration
 
-Gitpos workspaces are started based on sensible defaults, but of course not every workspace looks the same.
+Gitpod workspaces are started based on sensible defaults, but of course not every workspace looks the same.
 
 ## `.gitpod` File
 
-A workspace gets configured through a .gitpod file written in `yaml` syntax. There are three ways Gitpod will look one up for your workspace.
+A workspace gets configured through a .gitpod file written in `yaml` syntax. There are three ways you can provide this file:
 ### 1) Check-in `.gitpod` File
 
-The simplest and preferred option is to check-in a `.gitpod` file into your repository. The advantage is that you can even version your configuration,
-so if you need to go back to an old branch, that, for instance, requires a different docker image having a checked-in `.gitpod` file is the solution.
+The simplest and preferred option is to check-in a `.gitpod` file into your repository. The advantage is that you can even 
+version your configuration, so if you need to go back to an old branch that, for instance, requires a different docker image 
+having a checked-in `.gitpod` file is the solution.
 
-### 2) "[definitely-gp](https://github.com/gitpod-io/definitely-gp)" Repository
+### 2) [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
 
-In case you can't check-in a .gitpod file, for instance, because you don't have access rights. You can provide one through the central
-`definitely-gp` repository. It contains `.gitpod` files for public GitHub repositories. 
+Sometimes you can't check-in a `.gitpod` file, for instance, because you don't have access rights. You still can provide 
+one through the central [definitely-gp](https://github.com/gitpod-io/definitely-gp) repository. It contains 
+`.gitpod` files for public GitHub repositories. 
 
-### 3) Inferred `.gitpod`
+### 3) Inferred `.gitpod` file
 
-If the first two locations don't have a `.gitpod` file for your project, Gitpod will compute 
+If the first two locations don't have a `.gitpod` file for your project, Gitpod will compute one
 by analyzing your project and using good common defaults.
 
 ## Docker Image
 
 If the standard docker image that is provided by Gitpod doesn't include all the tools you need for developing your project, you can provide
-a custom docker image. The image must be publicly accessibly and follow the cmmonly used syntax of `<image>[:<tag>]`.
+a custom docker image. The image must be publicly accessibly and be named like `<image>[:<tag>]`.
 
 Example:
-```
+```yaml
 image: node:alpine
 ```
 
 ## Exposing Ports
 
-If you want to expose any ports from your development workspace, for instance the served ports of your dev server. 
-You can configure them in the `.gitpod` file. Ports are being mapped to their own URLs prefixing the workspace URL with `{portnumber}-`.
-
+If you want to expose any ports from your development workspace, for instance the served ports of your dev server, 
+you can configure them in the `.gitpod` file:
+```yaml
+ports:
+  - port: 8080
+    protocol: "http"
+```
+Ports are being mapped to their own URLs prefixing the workspace URL with `{portnumber}-`.
 For instance : `https://8080-fe76ea5b-924d-4a67-a2d5-24a259619fa7.ws.gitpod.io/`.
-
 At the moment only the `http` protocol is available.
 
 ## Start Script
 
-You can provide a shell command for the initial terminal to run on start.
 In many cases it makes sense to just start the build and maybe something like a dev server.
+Fot that purpose, you can provide a shell command to be run in the initial terminal on start.
 
-For example the `.gitpod` file for the documentation repository looks like this as the time of writing:
-```
-ports:
-  - port: 8080
-    protocol: "http"
+For example start script for the Gitpod documentation repository is defined as:
+```yaml
 tasks:
   - command: "npm install && npm run serve"
 ```
+You can chain multiple shell commands with `&&`. 
+
+## Working with Go
+
+Go requires to [organize your code in a specific way](https://golang.org/doc/code.html#Organization).
+In short, it expects the source code of your repository and its dependencies in the directories
+```
+${GOPATH}/src/<repository provider>/<repository owner>/<repository name>
+```
+To achieve that with Gitpod, you have to tweak the `.gitpod` file a bit. Here is how we do that in the 
+example [go-gin-app](https://github.com/gitpod-io/go-gin-app/blob/master/.gitpod) repository:
+```yaml
+...
+checkoutLocation: "go/src/github.com/gitpod-io/go-gin-app"
+workspaceLocation: "go/src"
+tasks:
+  - command: >
+      export GOPATH=/workspace/go && 
+      cd $GOPATH/src/github.com/gitpod-io/go-gin-app && 
+      go get -v ./... && 
+      go build -o app && 
+      ./app
+```
+In more detail:
+* By default, Gitpod clones the repository into the directory `/workspace` which becomes 
+the parent directory for the workspace. With `checkoutLocation` and `workspaceLocation` 
+you can redirect that to relative paths.
+* The `GOPATH` variable has to point to the common root directory `/workspace/go`.
+* With `go get -v ./...` we retrieve the sources of the dependencies from GitHub.
+* To build the app, we run `go build -o app`.
+* Finally we start the app.

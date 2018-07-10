@@ -11,6 +11,7 @@
     * [Docker Image](40_Configuration.md#docker-image)
     * [Exposing Ports](40_Configuration.md#exposing-ports)
     * [Start Script](40_Configuration.md#start-script)
+    * [Working with Go](40_Configuration.md#working-with-go)
 * [Theia IDE](50_IDE.md)
     * [Tips & Tricks](52_Tips_and_Tricks.md)
     * [Editor](53_Editor.md)
