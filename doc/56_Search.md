@@ -10,7 +10,7 @@ There are several ways to perform a search and to find things in the workspace:
 ## Search in Workspace
 
 The **Search in Workspace**-command will bring up the `Search` view. Run it either through the command palette or by pressing 
-<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> (<kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> on macOS)
+<kbd>Ctrl+Shift+F</kbd> (<kbd>⌘+Shift+F</kbd> on macOS)
 
 In the `Search` view, you can start typing and the matching results will be shown automatically without pressing <kbd>Enter</kbd>.
 The search can be restricted to case matching, whole word matching or when desired the query can be given as a regular expression.
@@ -53,12 +53,12 @@ before eventually applying them.
 
 ## Open File...
 
-Use <kbd>Ctrl</kbd>+<kbd>P</kbd> (<kbd>⌘</kbd>+<kbd>P</kbd> on macOS) to search files in the workspace by name.
+Use <kbd>Ctrl+P</kbd> (<kbd>⌘+P</kbd> on macOS) to search files in the workspace by name.
 By default hidden and filtered files do not show up among the results.
 
 ![](./images/56_Search/open_file.jpg)
 
-If you want to include all files in this search, press <kbd>Ctrl</kbd>+<kbd>P</kbd> once again.
+If you want to include all files in this search, press <kbd>Ctrl+P</kbd> once again.
 
 ![](./images/56_Search/open_file_all.jpg)
 
@@ -66,7 +66,7 @@ Selecting a file will open it an an editor.
 
 ## Open Workspace Symbol...
 
-Press <kbd>Ctrl</kbd>+<kbd>O</kbd> (<kbd>⌘</kbd>+<kbd>O</kbd> on macOS) to find all symbols in the workspace.
+Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find all symbols in the workspace.
 The meaning of a symbol and the available symbol kinds are language-specific.
 
 ![](./images/56_Search/open_workspace_symbol.jpg)
@@ -84,9 +84,9 @@ Use this to quickly locate a file in the `Files` navigator.
 
 ## Find and Replace in Editor
 
-Press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>⌘</kbd>+<kbd>F</kbd> on macOS) in the editor to open the `Find`/`Replace` search widget.
+Press <kbd>Ctrl+F</kbd> (<kbd>⌘+F</kbd> on macOS) in the editor to open the `Find`/`Replace` search widget.
 It is recommended to use this search functionality if you want to find something in a given file. As always, alternatively, you can
-use the Command Palette (look for `Find`) or the `Edit` > `Find` menu item to open the search widget.
+use the command palette (look for `Find`) or the `Edit` > `Find` menu item to open the search widget.
 
 ![](./images/56_Search/find_and_replace_editor.jpg)
 

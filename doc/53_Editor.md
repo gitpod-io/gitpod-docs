@@ -1,6 +1,6 @@
 # Editor Features
 
-In the following, we describe a set of useful editor features. They are usually provided by the Language Server and may not be available for all languages.
+In the following we describe a set of useful editor features. They are usually provided by the *language server* and may not be available for all languages.
 
 ### Format Document
 
@@ -9,26 +9,25 @@ If you want to format only a subsection of the current document, select the desi
 
 ### Rename Symbol
 
-Use `Rename Symbol` from the editor's context menu if you want to do a rename refactoring and pick another name for a symbol. Click on the symbol and specify the new name. You can access this functionality by pressing <kbd>F2</kbd> from the keyboard.
+Use `Rename Symbol` from the editor's context menu if you want to do a renaming refactoring. You can invoke this command also by pressing <kbd>F2</kbd>.
 
 ### Go to Type Definition
 
-Use `Go to Type Defintion` command from the editor's context menu or from the Command Palette to jump to the type defintion of a symbol.
+Choose `Go to Type Definition` command from the editor's context menu or from the command palette to jump to the type definition of a symbol.
 
 ### Go to Implementation
 
-With the `Go to Implementation` command from the Command Palette or from the context menu within the editor you can navigate to the implementation of a symbol. Still, the fastest way is the <kbd>Ctrl</kbd>+<kbd>F12</kbd> keybinding. If the symbol is an interface, it shows the implementors of the selected interface, if the symbol is an abstract method, it will show all concrete implementations.
-
+With the `Go to Implementation` command from the editor's context menu or from the command palette you can navigate to the implementation of a symbol. Alternatively, you can press <kbd>Ctrl+F12</kbd>. If the symbol is an interface, its implementors are shown; if the symbol is an abstract method, all its implementations will be listed.
 
 ### Go to Definition
 
 You can jump to the definition of a symbol by pressing <kbd>F12</kbd>.
-If you press </kbd>Ctrl</kbd> (<kbd>⌘</kbd> on macOS) and hover over a symbol, a preview of the declaration will appear. So there is not need to open the definition in a new editor.
+If you press </kbd>Ctrl</kbd> (<kbd>⌘</kbd> on macOS) and hover over a symbol, a preview of its definition will appear. So there is no need to open the definition in a new editor.
 
 ### Peek Definition
 
-This command is very similar to `Go to Definition`, but instead of jumping to the defintion which might be in a different file, it opens up an inline editor.
+This command is very similar to `Go to Definition`, but instead of jumping to the definition, which might be in a different file, the definition is opened in an inline editor.
 
-### Find All Refeferences
+### Find All References
 
-Use `Find All References` to collect all the references for a selected symbol. It shows the references in an inline editor.
+Use `Find All References` to list all the references to a selected symbol in an inline editor.
