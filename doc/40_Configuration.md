@@ -5,15 +5,15 @@ Gitpod workspaces are started based on sensible defaults, but of course not ever
 ## `.gitpod` File
 
 A workspace gets configured through a .gitpod file written in `yaml` syntax. There are three ways you can provide this file:
-### 1) Check-in `.gitpod` File
+### 1) Check in `.gitpod` File
 
-The simplest and preferred option is to check-in a `.gitpod` file into your repository. The advantage is that you can even 
-version your configuration, so if you need to go back to an old branch that, for instance, requires a different docker image 
+The simplest and preferred option is to check in a `.gitpod` file into your repository. The advantage is that you can even 
+version your configuration, so if you need to go back to an old branch that, for instance, requires a different docker image,
 having a checked-in `.gitpod` file is the solution.
 
 ### 2) [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
 
-Sometimes you can't check-in a `.gitpod` file, for instance, because you don't have access rights. You still can provide 
+Sometimes you can't check in a `.gitpod` file, for instance because you don't have sufficient access rights. However, you still can provide 
 one through the central [definitely-gp](https://github.com/gitpod-io/definitely-gp) repository. It contains 
 `.gitpod` files for public GitHub repositories. 
 
@@ -25,7 +25,7 @@ by analyzing your project and using good common defaults.
 ## Docker Image
 
 If the standard docker image that is provided by Gitpod doesn't include all the tools you need for developing your project, you can provide
-a custom docker image. The image must be publicly accessibly and be named like `<image>[:<tag>]`.
+a custom docker image. The image must be publicly accessible and named like `<image>[:<tag>]`.
 
 Example:
 ```yaml
@@ -48,9 +48,9 @@ At the moment only the `http` protocol is available.
 ## Start Script
 
 In many cases it makes sense to just start the build and maybe something like a dev server.
-Fot that purpose, you can provide a shell command to be run in the initial terminal on start.
+For that purpose, you can provide a shell command to be run in the initial terminal on start.
 
-For example start script for the Gitpod documentation repository is defined as:
+For instance, the start script for the Gitpod documentation repository is defined as:
 ```yaml
 tasks:
   - command: "npm install && npm run serve"
@@ -79,9 +79,9 @@ tasks:
       ./app
 ```
 In more detail:
-* By default, Gitpod clones the repository into the directory `/workspace` which becomes 
+* By default, Gitpod clones the repository into the directory `/workspace`, which becomes 
 the parent directory for the workspace. With `checkoutLocation` and `workspaceLocation` 
-you can redirect that to relative paths.
+you can change this (the paths are taken relative to `/workspace`).
 * The `GOPATH` variable has to point to the common root directory `/workspace/go`.
 * With `go get -v ./...` we retrieve the sources of the dependencies from GitHub.
 * To build the app, we run `go build -o app`.
