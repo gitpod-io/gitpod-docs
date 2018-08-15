@@ -4,6 +4,8 @@
 GitLab and Bitbucket. With a single click it creates ready-to-use developer workspaces with a full-featured 
 IDE running in the cloud.
 
+![](./images/gitpod-logo.png)
+
 In contrast to traditional cloud and desktop IDEs, Gitpod understands the context and prepares the IDE accordingly.
 For instance, if you are creating a Gitpod workspace from a GitHub pull request, the IDE will open in code-review mode.
 
