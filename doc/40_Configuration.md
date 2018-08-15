@@ -62,18 +62,18 @@ You can chain multiple shell commands with `&&`.
 Go requires to [organize your code in a specific way](https://golang.org/doc/code.html#Organization).
 In short, it expects the source code of your repository and its dependencies in the directories
 ```
-${GOPATH}/src/<repository provider>/<repository owner>/<repository name>
+src/<repository provider>/<repository owner>/<repository name>
 ```
+on the `$GOPATH`.
 To achieve that with Gitpod, you have to tweak the `.gitpod` file a bit. Here is how we do that in the 
 example [go-gin-app](https://github.com/gitpod-io/go-gin-app/blob/master/.gitpod) repository:
 ```yaml
 ...
-checkoutLocation: "go/src/github.com/gitpod-io/go-gin-app"
-workspaceLocation: "go/src"
+checkoutLocation: "src/github.com/gitpod-io/go-gin-app"
+workspaceLocation: "."
 tasks:
   - command: >
-      export GOPATH=/workspace/go && 
-      cd $GOPATH/src/github.com/gitpod-io/go-gin-app && 
+      cd /workspace/src/github.com/gitpod-io/go-gin-app && 
       go get -v ./... && 
       go build -o app && 
       ./app
@@ -82,7 +82,7 @@ In more detail:
 * By default, Gitpod clones the repository into the directory `/workspace`, which becomes 
 the parent directory for the workspace. With `checkoutLocation` and `workspaceLocation` 
 you can change this (the paths are taken relative to `/workspace`).
-* The `GOPATH` variable has to point to the common root directory `/workspace/go`.
+* Gitpod preconfigures the `$GOPATH` environment variable to include the directory `/workspace`.
 * With `go get -v ./...` we retrieve the sources of the dependencies from GitHub.
 * To build the app, we run `go build -o app`.
 * Finally we start the app.
