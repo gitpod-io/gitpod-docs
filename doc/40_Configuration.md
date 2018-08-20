@@ -65,15 +65,15 @@ In short, it expects the source code of your repository and its dependencies in 
 src/<repository provider>/<repository owner>/<repository name>
 ```
 on the `$GOPATH`.
-To achieve that with Gitpod, you have to tweak the `.gitpod` file a bit. Here is how we do that in the 
-example [go-gin-app](https://github.com/gitpod-io/go-gin-app/blob/master/.gitpod) repository:
+To achieve that with Gitpod, you have to tweak the `.gitpod` file a bit. Here is how we do that for the 
+example [go-gin-app](https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod) repository:
 ```yaml
 ...
-checkoutLocation: "src/github.com/gitpod-io/go-gin-app"
+checkoutLocation: "src/github.com/demo-apps/go-gin-app"
 workspaceLocation: "."
 tasks:
   - command: >
-      cd /workspace/src/github.com/gitpod-io/go-gin-app && 
+      cd /workspace/src/github.com/demo-apps/go-gin-app && 
       go get -v ./... && 
       go build -o app && 
       ./app
