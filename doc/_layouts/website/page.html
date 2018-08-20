@@ -77,3 +77,8 @@
     {{ super() }}
 </div>
 {% endblock %}
+
+{% block page %}
+{{ super() }}
+<button class="edit" onclick="window.open('https://gitpod.io/#https://github.com/gitpod-io/gitpod-docs/tree/master/doc/{{file.path}}','_blank')">Edit in Gitpod</button>
+{% endblock %}
