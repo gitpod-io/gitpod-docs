@@ -4,7 +4,7 @@ Gitpod workspaces are started based on sensible defaults, but of course not ever
 
 ## `.gitpod` File
 
-A workspace gets configured through a .gitpod file written in `yaml` syntax. There are three ways you can provide this file:
+A workspace gets configured through a `.gitpod` file written in `yaml` syntax. There are three ways you can provide this file:
 ### 1) Check in `.gitpod` File
 
 The simplest and preferred option is to check in a `.gitpod` file into your repository. The advantage is that you can even 
@@ -17,7 +17,7 @@ Sometimes you can't check in a `.gitpod` file, for instance because you don't ha
 one through the central [definitely-gp](https://github.com/gitpod-io/definitely-gp) repository. It contains 
 `.gitpod` files for public GitHub repositories. 
 
-### 3) Inferred `.gitpod` file
+### 3) Inferred `.gitpod` File
 
 If the first two locations don't have a `.gitpod` file for your project, Gitpod will compute one
 by analyzing your project and using good common defaults.
