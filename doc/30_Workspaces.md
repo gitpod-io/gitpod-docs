@@ -1,6 +1,6 @@
 # Workspaces
 
-A Gitpod workspace can be created from any GitHub project, branch, issue or pull request.
+A Gitpod workspace can be created from any GitHub project, branch, issue, or pull request.
 Very soon Gitpod will support additional platforms and integrations for GitLab, Bitbucket, and Jira. 
 
 # Context URLs
@@ -64,7 +64,7 @@ and choose the `Stop Workspace` command (also available through the command pale
 The dialog will suggest you to also archive the workspace. Archived workspaces will be removed from workspace list in the dashboard and will not be 
 considered when starting a fresh workspace for the same context URL again.
 
-Workspaces can also be stopped, started, archived and unarchived from the [dashboard](60_Dashboard.md). 
+Workspaces can also be stopped, started, archived, and unarchived from the [dashboard](60_Dashboard.md). 
 
 ## Changes Are Saved
 Gitpod continuously backs up the current state of the workspace's repository in the cloud, so that 

@@ -5,7 +5,7 @@ Gitpod allows you to strictly follow the standard GitHub flow. It does not requi
 detours or additional steps. 
 
 In the GitHub flow, each programming task starts with a GitHub _issue_. In this issue, you describe 
-the task, defect, or feature and log all discussions and related commits.
+the task, defect, or feature, and log all discussions and related commits.
 
 ![](images/pr-GitHub-issue.png)
 
@@ -28,12 +28,12 @@ in the `Preview` view.
 
 Now let's solve the issue by applying a few changes. In this example, we add one file and modify 
 two existing ones. If you want to browse through all changes so far, go to the `Files` navigator view, choose 
-`Diff: Compare with...` and select the `master` branch in the quick open menu. The `Diff` view 
+`Diff: Compare with...`, and select the `master` branch in the quick open menu. The `Diff` view 
 allows you to go through all changes easily using the arrow keys.
 
 Once you're done reviewing your changes, it is time to commit them. Go to the `Git` view and stage
 all changed files by clicking on the `+` icon that pops up when you hover over the entries. Once 
-everything is staged, add a meaningful commit message and push the `Commit` button.
+everything is staged, add a meaningful commit message and press the `Commit` button.
 
 ![](images/pr-commit.png)
 
@@ -52,11 +52,11 @@ pushed to GitHub.
 ![](images/pr-new.png)
 
 The `Pull Request` view will now provide you with review facilities. You can view the PR on GitHub
-or synchronize with out-of-band changes, change the target branch, view the conversation or even 
+or synchronize with out-of-band changes, change the target branch, view the conversation, or even 
 start a review right now. 
 
-Let us leave a question to the reviewer. Open one of the modified files and hover over the gutter 
-left of the line numbers where you want to add the comment, then click on the comment icon. Enter 
+Let us leave a question to the reviewer. Open one of the modified files, hover over the gutter 
+left of the line numbers where you want to add the comment, and then click on the comment icon. Enter 
 your comment (once again in Markdown with `Preview` facilities) and click `Add single comment`.
 
 ![](images/pr-add-comment.png)

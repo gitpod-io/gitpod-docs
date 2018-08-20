@@ -34,7 +34,7 @@ After staging the desired files and specifying the commit message, the changes c
 
 ## Git Status Bar
 
-In the bottom left corner of Theia you can find indicators describing the status of your repository. It shows the current branch, dirty indicators and the number of ahead and behind changes of the current branch.
+In the bottom left corner of Theia you can find indicators describing the status of your repository. It shows the current branch, dirty indicators, and the number of ahead and behind changes of the current branch.
 
 The dirty indicators are as follows:
  - `*`: You have unstaged changes in your branch.
@@ -57,7 +57,7 @@ You can create and checkout branches directly within Theia through the `Git: Che
 
 ## Gutter Indicators
 
-If you open a file in an editor that is under version control by Git, and start applying changes, Theia will add useful annotations to the gutter and to the overview ruler of the editor.
+If you open a file in an editor that is under version control by Git and start applying changes, Theia will add useful annotations to the gutter and to the overview ruler of the editor.
 
  - A red triangle indicates where lines have been deleted.
  - A green bar shows the newly added lines.
@@ -71,15 +71,15 @@ You can show the blame annotation by either selecting the `Show Blame Annotation
 
 ![](./images/54_Git/git_blame_annotations.jpg)
 
-## Merge conflicts
+## Merge Conflicts
 
-Theia recognizes merge conflicts. Theia highlights the differences and provides inline action to accept either the local or the incoming change. Alternatively, both modifications can be accepted at the same time. Once you have resolved the conflicts, stage your changes and commit it.
+Theia recognizes merge conflicts. Theia highlights the differences and provides inline action to accept either the local or the incoming change. Alternatively, both modifications can be accepted at the same time. Once you have resolved the conflicts, stage your changes and commit them.
 
 ![](./images/54_Git/git_merge_conflicts.jpg)
 
 ## Viewing Diffs
 
-The Git extension supports viewing of diff withing Theia. Selecting any of the modified files will open a diff editor. As discussed earlier, the left-hand side is a read-only editor representing the index state, and the right-hand side editor is the working tree.
+The Git extension supports viewing of diff within Theia. Selecting any of the modified files will open a diff editor. As discussed earlier, the left-hand side is a read-only editor representing the index state, and the right-hand side editor is the working tree.
 
 ![](./images/54_Git/git_diff.jpg)
 
@@ -92,7 +92,7 @@ Theia provides various ways to review the Git history.
 
 You can activate the `Git History` view from the `View` > `Git History` menu or toggle the view with the <kbd>Alt+H</kbd> command, but the most convenient and recommended way is to right-click on the file in the `Files` navigator and select the `Git History` context menu item. The content of the `Git History` view does not update when changing the active editor or when altering the selection in the `Files` view. To get the history of an individual resource you have to either use the `Git History` command from the command palette or from the `Files` navigator's context menu.
 
-The top of the `Git History` view shows the path of the resource or resources. Right below the path, you can see the list of commits with some details; such as the committer, the subject of the commit message and the relative time of the commit. You can open up the commit in a read-only editor to review all the details about the commit.
+The top of the `Git History` view shows the path of the resource or resources. Right below the path, you can see the list of commits with some details; such as the committer, the subject of the commit message, and the relative time of the commit. You can open up the commit in a read-only editor to review all the details about the commit.
 
 ![](./images/54_Git/git_history.jpg)
 

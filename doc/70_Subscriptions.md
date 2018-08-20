@@ -14,7 +14,7 @@ granularity is Gitpod seconds.
 Depending on the type of subscription, you get a certain amount of Gitpod hours per 
 subscription month. Subscription months, unlike calendar months, start directly with 
 at the moment of the subscription. At the end of a subscription month, your remaining 
-Gitpod hours for that months expire and you will start with the subscription amount again.
+Gitpod hours for that months expire, and you will start with the subscription amount again.
 
 You can upgrade to a higher subscription plan at any point in time. The new subscription
 month starts immediately. Downgrading is possible as well, but the new subscription month 
