@@ -14,7 +14,6 @@
     * [Working with Go](40_Configuration.md#working-with-go)
 * [Theia IDE](50_IDE.md)
     * [Tips & Tricks](52_Tips_and_Tricks.md)
-    * [Editor](53_Editor.md)
     * [Git](54_Git.md)
     * [Search](56_Search.md)
     * [Creating Pull Requests](58_Pull_Requests.md)

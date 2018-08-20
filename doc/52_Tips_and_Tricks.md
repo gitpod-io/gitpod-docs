@@ -52,3 +52,10 @@ at the current position in an inline editor.
 - `Go to Definition` (<kbd>Ctrl+F12</kbd> or <kbd>Ctrl/⌘</kbd>+click) brings you to
 the definition of a symbol. `Peek Definition` (<kbd>Alt+F12</kbd>) does the same in an inline editor.
 - `Rename Symbol` (<kbd>F2</kbd>) renames the symbol and changes all references to it accordingly.
+
+## Format Document
+
+To tidy up your code, many languages support `Format Document` (<kbd>ALT-SHIFT-F</kbd>).
+If you want to apply this to only a subsection of the current document, select the desired region 
+and pick `Format Selection` from the editor's context menu.
+
