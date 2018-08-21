@@ -71,7 +71,7 @@ Gitpod continuously backs up the current state of the workspace's repository in 
 you can revisit it later. Files in other locations will not be saved. Gitpod never deletes a workspace.
 See [dashboard](60_Dashboard.md) for details.
 
-## Shared Workspaces
+# Shared Workspaces
 Workspaces can be shared from the [dashboard](60_Dashboard.md) or from within the IDE.
 In the IDE, right-click on the user's avatar and choose `Share Workspace`. The URL you can share with your colleagues
 is shown in the dialog.

@@ -1,4 +1,4 @@
-# Configuration
+# Configuring Workspaces
 
 Gitpod workspaces are started based on sensible defaults, but of course not every workspace looks the same.
 
