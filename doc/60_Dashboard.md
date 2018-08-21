@@ -1,4 +1,4 @@
-# The Dashboard
+# Dashboard
 
 Gitpod's dashboard allows you to log in and out, navigate through all your workspaces, and view
 details of your account and subscription. It can be reached by pointing your browser to
