@@ -2,6 +2,14 @@
 
 Below you find a list of tips and tricks to the most useful tools.
 
+  * [Command Palette](#command-palette)
+    * [Command Palette Context](#command-palette-context)
+  * [Color Themes](#color-themes)
+  * [Open File](#open-file)
+  * [Search in Workspace](#search-in-workspace)
+  * [Symbols and References](#symbols-and-references)
+  * [Format Document](#format-document)
+
 ## Command Palette
 
 The *command palette* is the center for a keyboard-centric interaction as well as for looking up
@@ -11,7 +19,7 @@ available commands and key bindings. It is available through the following two k
 
 ![](./images/command_palette.jpg)
 
-### The Command Palette is Contextual
+### Command Palette Context
 
 The command palette lists only those commands that are available in the current context. For
 example, the `Go To Line...` command shows in the palette only when a code editor is opened and has

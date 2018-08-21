@@ -2,11 +2,13 @@
 
 There are several ways to perform a search and to find things in the workspace:
 
-  - [Search in Workspace](#search-in-workspace)
-  - [Open File](#open-file)
-  - [Open Workspace Symbol](#open-workspace-symbol)
-  - [Navigator Search](#navigator-search)
-  - [Find and Replace in Editor](#find-and-replace-in-editor)
+  * [Search in Workspace](#search-in-workspace)
+    * [Advanced Search Options](#advanced-search-options)
+    * [Search and Replace](#search-and-replace)
+  * [Open File](#open-file)
+  * [Open Workspace Symbol](#open-workspace-symbol)
+  * [Navigator Search](#navigator-search)
+  * [Find and Replace in Editor](#find-and-replace-in-editor)
 
 ## Search in Workspace
 

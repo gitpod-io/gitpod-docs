@@ -3,6 +3,15 @@
 Theia ships with a couple of Git-related features. Please note that these are all meant to be
 convenient UIs on top of the command line `git`, which is available in the terminal as well.
 
+  * [Authoring Commits](#authoring-commits)
+  * [Git Status Bar](#git-status-bar)
+  * [Branches and Tags](#branches-and-tags)
+  * [Gutter Indicators](#gutter-indicators)
+  * [Blame Annotations](#blame-annotations)
+  * [Merge Conflicts](#merge-conflicts)
+  * [Viewing Diffs](#viewing-diffs)
+  * [Git History](#git-history)
+
 ## Authoring Commits
 
 The Git view is automatically added to the left panel. If you have accidentally closed it, you can

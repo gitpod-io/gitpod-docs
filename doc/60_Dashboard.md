@@ -7,6 +7,11 @@ details of your account and subscription. It can be reached by pointing your bro
 If you're not logged in, you will see a _Log in_ button. Otherwise, the top-right corner will
 display your avatar's picture. Clicking it will reveal the User Menu.
 
+  * [Workspaces](#workspaces)
+    * [Archived Workspaces](#archived-workspaces)
+  * [Account Details](#account-details)
+  * [Log Out](#log-out)
+
 ## Workspaces
 
 By default, the dashboard shows you a list of your workspaces and their current state. The list is

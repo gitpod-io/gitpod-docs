@@ -3,6 +3,17 @@
 A Gitpod workspace can be created from any GitHub project, branch, issue, or pull request. Very
 soon Gitpod will support additional platforms and integrations for GitLab, Bitbucket, and Jira.
 
+  * [Context URLs](#context-urls)
+    * [GitHub Project Context](#github-project-context)
+    * [GitHub File Context](#github-file-context)
+    * [GitHub Issue Context](#github-issue-context)
+    * [GitHub Pull Request Context](#github-pull-request-context)
+  * [Life of a Workspace](#life-of-a-workspace)
+    * [Timeouts](#timeouts)
+    * [Stop and Archive](#stop-and-archive)
+    * [Changes Are Saved](#changes-are-saved)
+  * [Shared Workspaces](#shared-workspaces)
+
 ## Context URLs
 
 Gitpod derives the context of the workspace from the URL of the repository page from which it was
