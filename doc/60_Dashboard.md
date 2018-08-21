@@ -39,7 +39,7 @@ be taken into account.
 
 ## Account Details
 
-Acount details can be accessed via the _User Menu > Account details_. This page allows you to add or
+Account details can be accessed via the _User Menu > Account details_. This page allows you to add or
 remove accounts to code hosting platforms and manage your Gitpod subscription. It also gives you a
 tabular view on your Gitpod usage.
 

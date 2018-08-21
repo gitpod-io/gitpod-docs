@@ -12,7 +12,7 @@ Below you find a list of tips and tricks to the most useful tools.
 
 ## Command Palette
 
-The *command palette* is the center for a keyboard-centric interaction as well as for looking up
+The _command palette_ is the center for a keyboard-centric interaction as well as for looking up
 available commands and key bindings. It is available through the following two key bindings:
   - <kbd>F1</kbd>
   - <kbd>Ctrl+Shift+P</kbd> (<kbd>⌘+Shift+P</kbd> on macOS)
@@ -29,8 +29,8 @@ focus.
 
 ## Color Themes
 
-Gitpod opens in its *dark theme*. If you prefer a lighter experience, you can switch to the *light
-theme*. Simply use the command palette and select `Change Color Theme`.
+Gitpod opens in its _dark theme_. If you prefer a lighter experience, you can switch to the _light
+theme_. Simply use the command palette and select `Change Color Theme`.
 
 ![Change Color Theme](./images/light-theme.png)
 
@@ -45,14 +45,14 @@ It will let you search, find, and open any file by name.
 
 ## Search in Workspace
 
-To search for or replace string occurences in all files of your workspace press:
-  - <kbd>Ctrl+Shift+F</kbd> (<kbd>⌘+Shift+P</kbd> on macOS)
+To search for or to replace string occurrences in all files of your workspace, press:
+  - <kbd>Ctrl+Shift+F</kbd> (<kbd>⌘+Shift+F</kbd> on macOS)
 
 It opens the search view, which is described in more detail [here](56_Search.md).
 
 ## Symbols and References
 
-Most languages allow to name things and refer to them in other places, for example variables, 
+Most languages allow to name things and refer to them in other places, for example variables,
 functions, classes, modules etc. Gitpod supports this notion of such _symbols_ and _references_ to
 them and allows to navigate in both directions:
 
@@ -65,6 +65,6 @@ them and allows to navigate in both directions:
 
 ## Format Document
 
-To tidy up your code, many languages support `Format Document` (<kbd>ALT-SHIFT-F</kbd>).
-If you want to apply this to only a subsection of the current document, select the desired region 
+To tidy up your code, many languages support `Format Document` (<kbd>Alt+Shift+F</kbd>).
+If you want to apply this to only a subsection of the current document, select the desired region
 and pick `Format Selection` from the editor's context menu.

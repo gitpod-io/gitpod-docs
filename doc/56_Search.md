@@ -12,7 +12,7 @@ There are several ways to perform a search and to find things in the workspace:
 
 ## Search in Workspace
 
-The **Search in Workspace**-command will bring up the `Search` view. Run it either through the
+The `Search in Workspace` command will bring up the `Search` view. Run it either through the
 command palette or by pressing <kbd>Ctrl+Shift+F</kbd> (<kbd>⌘+Shift+F</kbd> on macOS)
 
 In the `Search` view, you can start typing, and the matching results will be shown automatically
@@ -54,7 +54,7 @@ text box.
 
 When you type text into the `Replace` text box, you will see a diff display of the pending changes.
 You can replace across all files from the Replace text box, replace all in one file, or replace a
-single change. Double-clicking on any of the `Search and Replace` occurences, opens the file in a
+single change. Double-clicking on any of the `Search and Replace` occurrences, opens the file in a
 diff editor so that you can review the modification in the editor before eventually applying them.
 
 ![](./images/56_Search/search_and_replace_in_action.jpg)
@@ -81,7 +81,7 @@ of a symbol and the available symbol kinds are language-specific.
 
 ## Navigator Search
 
-When the `Files` navigator is focussed, start typing to highlight all those files whose names match
+When the `Files` navigator is focused, start typing to highlight all those files whose names match
 your pattern. This search ignores all collapsed files in the navigator. When the navigator search is
 active and there are highlighted files, you can use the cursor arrows to jump the matching resources
 in the navigator. You can finish your search anytime by hitting <kbd>Esc</kbd>, or by deleting your

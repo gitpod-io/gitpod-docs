@@ -8,7 +8,7 @@ Our internal calculation unit is _Gitpod hours_. One Gitpod hour allows you to u
 one hour on a default server. If you use multiple workspaces in parallel you will be charged for
 each of these individually, e.g. for running three workspaces in parallel for half an hour we will
 charge you 1.5 Gitpod hours. For non-default resources, we apply a factor that reflects the
-additonal costs we have for the special hardware. The granularity is Gitpod seconds.
+additional costs we have for the special hardware. The granularity is Gitpod seconds.
 
 Depending on the type of subscription, you get a certain amount of Gitpod hours per subscription
 month. Subscription months, unlike calendar months, start directly with at the moment of the
