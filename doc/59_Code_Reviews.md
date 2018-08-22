@@ -2,14 +2,14 @@
 
 Let us have a look how we can perform a code review on GitHub with Gitpod. We continue the example
 from the [previous chapter](58_Pull_Requests.md), where we created a pull request (PR). In the role
-of the reviewer you open this PR on GitHub. Once again, Gitpod allows you to simply follow the
+of the reviewer you open this PR on GitHub. Once again, Gitpod allows you to follow the
 GitHub flow.
 
 ![](images/cr-GitHub-pr.png)
 
 Just like the creator of the PR, you can start a Gitpod workspace by prefixing the URL or using the
 `Gitpod` button provided by the [Gitpod browser extension](20_Browser_Extension.md). Gitpod spawns a
-workspace and the IDE is loaded into the browser.
+workspace and the IDE loads in the browser.
 
 ![](images/cr-gitpod-started.png)
 

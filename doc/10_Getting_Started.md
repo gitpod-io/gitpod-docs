@@ -12,9 +12,8 @@ The following example shows how to use Gitpod with a GitHub repository.
    ![](./images/gitpod_prefix.jpg)
 
 3. On first use you will have to authorize access to your GitHub account. This is necessary so you
-   can use it from within Gitpod.
-4. Gitpod will now launch a workspace container for you in the cloud containing a full Linux system
-   machine. It will also clone the GitHub repository branch according to the GitHub site you were
-   coming from.
+   can access your data from within Gitpod.
+4. Gitpod will now launch a workspace container for you in the cloud, containing a full Linux system.
+   It will also clone the GitHub repository branch based on the GitHub page you were coming from.
 
 Next up you should learn about [Gitpod's IDE](./50_IDE.html).

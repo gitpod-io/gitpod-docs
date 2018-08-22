@@ -1,7 +1,5 @@
 # Tips & Tricks
 
-Below you find a list of tips and tricks to the most useful tools.
-
   * [Command Palette](#command-palette)
     * [Command Palette Context](#command-palette-context)
   * [Color Themes](#color-themes)
@@ -12,8 +10,8 @@ Below you find a list of tips and tricks to the most useful tools.
 
 ## Command Palette
 
-The _command palette_ is the center for a keyboard-centric interaction as well as for looking up
-available commands and key bindings. It is available through the following two key bindings:
+The _command palette_ is the center for a keyboard-centric interaction, as well as for looking up
+available commands and key bindings. It is available through the following two keyboard shortcuts:
   - <kbd>F1</kbd>
   - <kbd>Ctrl+Shift+P</kbd> (<kbd>⌘+Shift+P</kbd> on macOS)
 
@@ -53,8 +51,8 @@ It opens the search view, which is described in more detail [here](56_Search.md)
 ## Symbols and References
 
 Most languages allow to name things and refer to them in other places, for example variables,
-functions, classes, modules etc. Gitpod supports this notion of such _symbols_ and _references_ to
-them and allows to navigate in both directions:
+functions, classes, modules etc. Gitpod supports this notion of _symbols_ (and their _references_) 
+and supports navigation in both directions:
 
   - `Open Symbol` (<kbd>Ctrl+Shift+O</kbd>) finds a symbol by its name.
   - `Find All References` (<kbd>Shift+F12</kbd>) lists all references to the symbol at the current
