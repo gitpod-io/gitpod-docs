@@ -19,7 +19,7 @@ In the `Search` view, you can start typing, and the matching results will be sho
 without pressing <kbd>Enter</kbd>. The search can be restricted to case matching, whole word
 matching, or the query can be given as a regular expression. Search results are
 grouped by file, with an indication of the number of occurrences and the file's path. Expand a file
-to see a preview of all of the hits within that file. Then single-click on one of the files to view
+to see a preview of all of the hits within that file. Then single-click on one of the hits to view
 it in the editor.
 
 ![](./images/56_Search/search_in_workspace.jpg)
@@ -29,9 +29,9 @@ it in the editor.
 ![](./images/56_Search/advanced_search_options.jpg)
 
 In the input box below the search box, you can enter patterns to include or exclude from the search.
-If you enter `theName`, it will match every folder and file named `theName` in the workspace. If you
-enter `./theName`, it will match the folder `theName/` at the top level of your workspace. Use `!`
-to exclude those patterns from the search. `!theName` will skip searching any folder or file named
+If you enter `theName`, it will match every directory and file named `theName` in the workspace. If you
+enter `./theName`, it will match the directory `theName/` at the top level of your workspace. Use `!`
+to exclude those patterns from the search. `!theName` will skip searching any directory or file named
 `theName`. You can also use globbing syntax:
 
   - `*` to match one or more characters in a path segment,
@@ -41,7 +41,7 @@ to exclude those patterns from the search. `!theName` will skip searching any fo
   - `[]` to declare a range of characters to match (e.g., `theName.[0-9]` to match on `theName.0`,
     `theName.1`, …).
 
-Theia excludes some folders by default (for instance, `node_modules` and others that are ignored through
+Theia excludes some directories by default (for instance, `node_modules` and others that are ignored through
 `.gitignore`) to reduce the number of search results. If you would like to search for all files in the
 workspace, click on the `Include Ignored Files` in the search field.
 
@@ -75,7 +75,7 @@ Selecting a file will open it an an editor.
 ## Open Workspace Symbol
 
 Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find symbols in the workspace. The meaning
-of a symbol and what symbols are available is language specific.
+of a symbol and what symbols are available is language-specific.
 
 ![](./images/56_Search/open_workspace_symbol.jpg)
 

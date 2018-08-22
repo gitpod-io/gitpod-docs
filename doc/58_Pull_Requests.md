@@ -24,12 +24,12 @@ such that it can be tested right in the `Preview` view.
 
 ![](images/pr-preview.png)
 
-Now let's solve the issue by applying a few changes. In this example, we add one file and modify two
+Now let us solve the issue by applying a few changes. In this example, we add one file and modify two
 existing ones. If you want to browse through all changes so far, go to the `Files` navigator view,
 choose `Diff: Compare with...`, and select the `master` branch in the quick open menu. The `Diff`
 view allows you to go through all changes easily using the arrow keys.
 
-Once you're done reviewing your changes, it is time to commit them. Go to the `Git` view and stage
+Once you are done reviewing your changes, it is time to commit them. Go to the `Git` view and stage
 all changed files by clicking on the `+` icon that pops up when you hover over the entries. Once
 everything is staged, add a meaningful commit message and press the `Commit` button.
 
@@ -38,7 +38,7 @@ everything is staged, add a meaningful commit message and press the `Commit` but
 The next step in the GitHub flow is to propose our changes as a GitHub pull request. You can do that
  from within Gitpod. In the `Pull Request` view you will see a message that our current
 branch has no remote tracking branch. By clicking on the `Publish Changes` button, Gitpod creates a remote
-branch GitHub and synchronizes it with our local branch.
+branch on GitHub and synchronizes it with our local branch.
 
 ![](images/pr-confirm-publish.png)
 

@@ -15,11 +15,11 @@ emphasizes diversity.
 
 ## Overview
 
-When first open Theia, you will see a welcome screen that quickly gets you started.
+When you open Theia for the first time, a welcome screen shows up to quickly get you started.
 After closing it you will see the workbench shell. Depending on the
 [context URL](30_Workspaces.md#context-urls), different views might be opened.
 
-Let's have a look at the primary elements of the workbench shell.
+Let us have a look at the primary elements of the workbench shell.
 
 ### Views and Editors
 

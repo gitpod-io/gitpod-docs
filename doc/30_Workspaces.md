@@ -40,7 +40,7 @@ corresponding branch and open the respective file in an editor.
 An example for this context is
 `https://github.com/arunoda/learnnextjs-demo/blob/getting-started/pages/index.js`.
 
-When pointing to a folder, e.g.
+When pointing to a directory, e.g.
 `https://github.com/arunoda/learnnextjs-demo/tree/create-dynamic-pages/pages`, `Readme.md`
 will be opened if it exists there.
 

@@ -10,7 +10,7 @@ In contrast to traditional cloud and desktop IDEs, Gitpod understands the contex
 IDE accordingly. For instance, if you are creating a Gitpod workspace from a GitHub pull request,
 the IDE will open in code-review mode.
 
-Also, Gitpod workspaces are meant to be disposable. That is, you don't need to maintain anything.
+Also, Gitpod workspaces are meant to be disposable. That is, you do not need to maintain anything.
 They are created when you need them, and you can forget about them when you are done. Simply go to
 GitHub and create a fresh workspace whenever you need one.
 
