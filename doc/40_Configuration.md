@@ -3,26 +3,35 @@
 Gitpod workspaces are started based on sensible defaults, but of course not every workspace looks
 the same.
 
+  * [`.gitpod` File](#gitpod-file)
+    * [Checked-in .gitpod File](#checked-in-gitpod-file)
+    * [definitely-gp Repository](#definitely-gp-repository)
+    * [Inferred `.gitpod` File](#inferred-gitpod-file)
+  * [Docker Image](#docker-image)
+  * [Exposing Ports](#exposing-ports)
+  * [Start Script](#start-script)
+  * [Working with Go](#working-with-go)
+
 ## `.gitpod` File
 
 A workspace gets configured through a `.gitpod` file written in `yaml` syntax. There are three ways
 you can provide this file:
 
-### 1) Check in `.gitpod` File
+### Checked-in `.gitpod` File
 
 The simplest and preferred option is to check in a `.gitpod` file into your repository. The
 advantage is that you can even version your configuration, so if you need to go back to an old
 branch that, for instance, requires a different docker image, having a checked-in `.gitpod` file is
 the solution.
 
-### 2) [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
+### [definitely-gp](https://github.com/gitpod-io/definitely-gp) Repository
 
 Sometimes you can't check in a `.gitpod` file, for instance because you don't have sufficient
 access rights. However, you still can provide one through the central
 [definitely-gp](https://github.com/gitpod-io/definitely-gp) repository. It contains `.gitpod` files
 for public GitHub repositories.
 
-### 3) Inferred `.gitpod` File
+### Inferred `.gitpod` File
 
 If the first two locations don't have a `.gitpod` file for your project, Gitpod will compute one by
 analyzing your project and using good common defaults.

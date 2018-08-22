@@ -1,4 +1,4 @@
-# The Dashboard
+# Dashboard
 
 Gitpod's dashboard allows you to log in and out, navigate through all your workspaces, and view
 details of your account and subscription. It can be reached by pointing your browser to
@@ -6,6 +6,11 @@ details of your account and subscription. It can be reached by pointing your bro
 
 If you're not logged in, you will see a _Log in_ button. Otherwise, the top-right corner will
 display your avatar's picture. Clicking it will reveal the User Menu.
+
+  * [Workspaces](#workspaces)
+    * [Archived Workspaces](#archived-workspaces)
+  * [Account Details](#account-details)
+  * [Log Out](#log-out)
 
 ## Workspaces
 

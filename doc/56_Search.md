@@ -2,11 +2,13 @@
 
 There are several ways to perform a search and to find things in the workspace:
 
-  - [Search in Workspace](#search-in-workspace)
-  - [Open File...](#open-file)
-  - [Open Workspace Symbol...](#open-workspace-symbol)
-  - [Navigator Search](#navigator-search)
-  - [Find and Replace in Editor](#find-and-replace-in-editor)
+  * [Search in Workspace](#search-in-workspace)
+    * [Advanced Search Options](#advanced-search-options)
+    * [Search and Replace](#search-and-replace)
+  * [Open File](#open-file)
+  * [Open Workspace Symbol](#open-workspace-symbol)
+  * [Navigator Search](#navigator-search)
+  * [Find and Replace in Editor](#find-and-replace-in-editor)
 
 ## Search in Workspace
 
@@ -57,7 +59,7 @@ diff editor so that you can review the modification in the editor before eventua
 
 ![](./images/56_Search/search_and_replace_in_action.jpg)
 
-## Open File...
+## Open File
 
 Use <kbd>Ctrl+P</kbd> (<kbd>⌘+P</kbd> on macOS) to search files in the workspace by name. By
 default, hidden and filtered files do not show up among the results.
@@ -70,7 +72,7 @@ If you want to include all files in this search, press <kbd>Ctrl+P</kbd> once ag
 
 Selecting a file will open it an an editor.
 
-## Open Workspace Symbol...
+## Open Workspace Symbol
 
 Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find all symbols in the workspace. The meaning
 of a symbol and the available symbol kinds are language-specific.
