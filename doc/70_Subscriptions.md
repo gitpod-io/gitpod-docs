@@ -25,5 +25,5 @@ have different kinds of credits, the one with the earliest expiry date will be u
 You can see your current amount of Gitpod hours in the [dashboard](60_Dashboard.md#account-details)
 or in the IDE (_Help > Account Details_). You will be warned multiple times when you are getting
 close to running out of Gitpod hours. As soon as your credits are used up, your workspaces will be
-closed automatically. You can still use the dashboard but you won't be allowed to start any more
+closed automatically. You can still use the dashboard but you won't be able to start any more
 workspaces, until you have Gitpod hours again.

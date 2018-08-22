@@ -4,7 +4,7 @@ Gitpod's dashboard allows you to log in and out, navigate through all your works
 details of your account and subscription. It can be reached by pointing your browser to
 [https://gitpod.io](https://gitpod.io).
 
-If you're not logged in, you will see a _Log in_ button. Otherwise, the top-right corner will
+If you are not logged in, you will see a _Log in_ button. Otherwise, the top-right corner will
 display your avatar's picture. Clicking it will reveal the User Menu.
 
   * [Workspaces](#workspaces)
@@ -23,18 +23,17 @@ Each entry provides information about the workspace's name, creation date, works
 (repository, branch, commit ID, issue, or pull-request), execution state (e.g. _Starting_,
 _Stopping_, _Last run_).
 
-Workspaces can be started, stopped, or opened using the respective buttons.
+Workspaces can be started, opened, or stopped using the respective buttons.
 
-You can also allow/disallow sharing of a workspace by clicking the lock icon. See the section on
+You can also enable/disable sharing of a workspace by clicking the lock icon. See the section on
 [collaboration](30_Workspaces.md#shared-workspaces) for details about sharing workspaces.
 
 ### Archived Workspaces
 
-You can also _archive_ a workspace if you don't want it to appear in the list unless it is
-necessary.
+You can _archive_ a workspace if you do not want it to appear in the list.
 
 If you try to open a workspace from an existing context, Gitpod will redirect you to the dashboard
-in order to choose whether to open a new workspace or an existing one. Archived workspaces will not
+in order to choose whether to open a new workspace or re-use an existing one; archived workspaces will not
 be taken into account.
 
 ## Account Details
