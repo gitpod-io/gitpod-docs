@@ -33,8 +33,8 @@ You can also enable/disable sharing of a workspace by clicking the lock icon. Se
 You can _archive_ a workspace if you do not want it to appear in the list.
 
 If you try to open a workspace from an existing context, Gitpod will redirect you to the dashboard
-in order to choose whether to open a new workspace or re-use an existing one; archived workspaces will not
-be taken into account.
+to let you choose whether to open a new workspace or reuse an existing one. Archived workspaces will
+not be taken into account.
 
 ## Account Details
 

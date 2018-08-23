@@ -1,7 +1,7 @@
 # Git Integration
 
-Theia integrates closely with Git. All of those features are convenient UIs on top of the
-command line `git`, which is available in the terminal as well.
+Theia integrates closely with Git by offering convenient UIs on top of the command line `git`
+(which is available in the terminal as well).
 
   * [Authoring Commits](#authoring-commits)
   * [Git Status Bar](#git-status-bar)
@@ -15,7 +15,7 @@ command line `git`, which is available in the terminal as well.
 ## Authoring Commits
 
 The Git view is automatically added to the left panel. If you have accidentally closed it, you can
-re-open it from the `View` > `Git` menu or with the <kbd>Ctrl+Shift+G</kbd> (<kbd>⌘+Shift+G</kbd>
+reopen it from the `View` > `Git` menu or with the <kbd>Ctrl+Shift+G</kbd> (<kbd>⌘+Shift+G</kbd>
 on macOS) key binding.
 
 The `Git` view consists of three major sections. The top section is for authoring the commit messages.
@@ -23,8 +23,8 @@ It also provides access to a couple of basic Git commands.
 
 ![](./images/54_Git/git_commit_message.jpg)
 
-Right below is the commit section, which lists the changed files by their name and separates them in two groups: the
-`STAGED CHANGES` and `CHANGED`. The latter shows all unstaged changes.
+Right below is the commit section, which lists the changed files by their name and separates them in two
+groups: the `STAGED CHANGES` and `CHANGED`. The latter shows all unstaged changes.
 
 ![](./images/54_Git/git_file_changes.jpg)
 
@@ -33,7 +33,7 @@ At the bottom of the `Git` view, a small section gives a quick insight into the 
 ![](./images/54_Git/git_last_commit.jpg)
 
 In the list of staged and unstaged changes, the file names are followed by the path to their
-parent folder and an indicator describing the type of the change. This can be:
+parent directory and an indicator describing the type of the change. This can be:
 
   - `A`: Added (new staged),
   - `U`: new Unstaged,
@@ -47,7 +47,7 @@ location. Double-clicking on a modified file will open it in a diff editor. The 
 the left-hand side shows the state from the index. The right-hand side of the editor reflects the
 state of the working tree, and it lets you to further modify the file. New and deleted files do not
 open in a diff editor. Files can be staged (added to the index) by clicking on the `Stage
-Changes` action (`+` sign). To unstage a changes, use `Unstage Changes` action (`-` sign).
+Changes` action (`+` sign). To unstage changes, use `Unstage Changes` action (`-` sign).
 
 After staging the desired files and specifying the commit message, the changes can be committed to
 the repository. After a successful commit, the `Last Commit` section is automatically updated.
@@ -87,7 +87,7 @@ checks it out.
 ## Gutter Indicators
 
 If you open a file that is under version control by Git and start applying changes,
-Theia will add annotations to the gutter and to the overview ruler of the editor.
+Theia will add annotations to the gutter and to the overview ruler of the editor:
 
   - A red triangle indicates where lines have been deleted.
   - A green bar shows the newly added lines.
@@ -114,9 +114,9 @@ the same time. Once you have resolved the conflicts, stage your changes and comm
 
 ## Viewing Diffs
 
-The Git extension supports diffing within Theia. Selecting any of the modified files will
-open a diff editor. The left-hand side is a read-only editor representing the
-index state, and the right-hand side editor is the working tree.
+The Git extension supports diffing within Theia. Selecting any of the modified files will open a
+diff viewer. Its left-hand side is a read-only editor showing the index state, and the right-hand
+side is an editor of the working-tree state.
 
 ![](./images/54_Git/git_diff.jpg)
 
@@ -125,7 +125,7 @@ index state, and the right-hand side editor is the working tree.
 Theia provides various ways to review the Git history.
 
   - The history of an individual file can be checked, or
-  - The history of multiple files within a folder can be reviewed at once.
+  - The history of multiple files within a directory can be reviewed at once.
 
 You can activate the `Git History` view by right-clicking on the file in the `Files` navigator and
 selecting the `Git History` context menu item. Alternatively, you can open the history view from the

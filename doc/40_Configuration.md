@@ -33,7 +33,7 @@ simply raise a PR.
 
 ### Inferred `.gitpod` File
 
-If the first two locations don't have a `.gitpod` file for your project, Gitpod will compute one by
+If the first two locations do not have a `.gitpod` file for your project, Gitpod will compute one by
 analyzing your project and using good common defaults.
 
 ## Docker Image
@@ -74,8 +74,7 @@ For instance, the start script for the Gitpod documentation repository is define
 tasks:
   - command: "npm install && npm run serve"
 ```
-
-Similarly to Docker, you can chain multiple shell commands with `&&`.
+Note that you can chain multiple shell commands with `&&`.
 
 ## Working with Go
 
