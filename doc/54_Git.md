@@ -77,7 +77,7 @@ remote changes to your local repository and then push local commits to the upstr
 
 ![](./images/54_Git/git_checkout_command.jpg)
 
-You can create and checkout branches directly within Theia through the `Git: Checkout` command in
+You can create and check out branches directly within Theia through the `Git: Checkout` command in
 the command palette. For creating a new branch, select the first item from the list, `Create new
 branch...`, and specify the desired name of your branch. Theia creates the new branch for you and
 checks it out.
