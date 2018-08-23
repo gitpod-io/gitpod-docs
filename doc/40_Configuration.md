@@ -13,7 +13,7 @@ Gitpod workspaces come with good defaults, but of course not every workspace loo
 
 ## `.gitpod` File
 
-A workspace gets configured through a `.gitpod` file written in the YAML syntax. There are three ways
+A workspace gets configured through a `.gitpod` file written in YAML syntax. There are three ways
 you can provide this file:
 
 ### Checked-in `.gitpod` File
@@ -79,7 +79,7 @@ Note that you can chain multiple shell commands with `&&`.
 ## Working with Go
 
 Go projects need a [specific workspace layout](https://golang.org/doc/code.html#Organization):
-source code of your repository and its dependencies must be in the directories
+the source code of your repository and its dependencies must be in the directories
 ```
 src/<repository provider>/<repository owner>/<repository name>
 ```
