@@ -41,9 +41,9 @@ to exclude those patterns from the search. `!theName` will skip searching any di
   - `[]` to declare a range of characters to match (e.g., `theName.[0-9]` to match on `theName.0`,
     `theName.1`, …).
 
-Theia excludes some directories by default (for instance, `node_modules` and others that are ignored through
-`.gitignore`) to reduce the number of search results. If you would like to search for all files in the
-workspace, click on the `Include Ignored Files` in the search field.
+Theia excludes some directories by default (for instance, `node_modules` and others that are ignored
+through `.gitignore`) to reduce the number of search results. If you would like to search for all files in
+the workspace, click on the `Include Ignored Files` in the search field.
 
 ### Search and Replace
 
@@ -62,7 +62,7 @@ diff editor so that you can review the modification in the editor before eventua
 ## Open File
 
 Use <kbd>Ctrl+P</kbd> (<kbd>⌘+P</kbd> on macOS) to search files in the workspace by name. By
-default, ignored files do not show up among the results.
+default, hidden and ignored files do not show up among the results.
 
 ![](./images/56_Search/open_file.jpg)
 
@@ -74,8 +74,8 @@ Selecting a file will open it an an editor.
 
 ## Open Workspace Symbol
 
-Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find symbols in the workspace. The meaning
-of a symbol and what symbols are available is language-specific.
+Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find symbols in the workspace. Note: what is
+considered a symbol is language-specific.
 
 ![](./images/56_Search/open_workspace_symbol.jpg)
 
