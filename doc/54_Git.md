@@ -116,7 +116,7 @@ the same time. Once you have resolved the conflicts, stage your changes and comm
 
 The Git extension supports diffing within Theia. Selecting any of the modified files will open a
 diff viewer. Its left-hand side is a read-only editor showing the index state, and the right-hand
-side is an editor of the working-tree state.
+side is an editor for the working-tree state.
 
 ![](./images/54_Git/git_diff.jpg)
 

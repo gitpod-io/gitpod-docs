@@ -74,8 +74,8 @@ Selecting a file will open it an an editor.
 
 ## Open Workspace Symbol
 
-Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find symbols in the workspace. Note: what is
-considered a symbol is language-specific.
+Press <kbd>Ctrl+O</kbd> (<kbd>⌘+O</kbd> on macOS) to find symbols in the workspace. Note: what kinds
+of symbols are searchable is language-specific.
 
 ![](./images/56_Search/open_workspace_symbol.jpg)
 
