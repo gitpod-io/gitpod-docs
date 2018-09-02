@@ -1,7 +1,7 @@
 # Subscriptions
 
 In order to use Gitpod, a user has to have a valid subscription. If you are not aware of that, you
-are likely using the free subscription. See our [homepage](https://www.github.io) for possible
+are likely using the free subscription. See our [homepage](https://www.gitpod.io) for possible
 subscription plans.
 
 Our internal calculation unit is _Gitpod hours_. One Gitpod hour allows you to use one workspace for
