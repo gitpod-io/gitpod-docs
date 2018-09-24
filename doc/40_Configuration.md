@@ -13,8 +13,21 @@ Gitpod workspaces come with good defaults, but of course not every workspace loo
 
 ## `.gitpod` File
 
-A workspace gets configured through a `.gitpod` file written in YAML syntax. There are three ways
-you can provide this file:
+A workspace gets configured through a `.gitpod` file written in YAML syntax. It has the following structure:
+
+```yaml
+# The Docker Image to run your workspace in
+image: gitpod/workspace-full:latest
+# The command to start on workspace startup
+tasks:
+  - command: "yarn install && yarn build"
+# The ports to open at workspace startup
+ports:
+  - port: 8000
+    protocol: "http"
+```
+
+There are three ways you can provide this file:
 
 ### Checked-in `.gitpod` File
 
@@ -39,12 +52,50 @@ analyzing your project and using good common defaults.
 ## Docker Image
 
 If the standard Docker image that is provided by Gitpod does not include all the tools you need for
-developing your project, you can provide a custom Docker image. The image must be publicly
-accessible, so that Gitpod can pull it.
+developing your project, you can provide a custom Docker image.
 
-Example:
+### Configure a custom Docker Image
+
+There are two ways to configure a custom Docker image in your `.gitpod` file:
+
+* Reference a publicly available image:
+
+    ```yaml
+    image: node:alpine
+    ```
+    The official Gitpod Docker images are hosted on [DockerHub](https://hub.docker.com/u/gitpod/).
+* Reference a Dockerfile next to your `.gitpod` file:
+
+    ```yaml
+    image:
+      file: docker/gitpod.Dockerfile
+      # Context is optional, defaults to an empty context
+      context: docker
+    ```
+    The Dockerfile is built automatically and is updated whenever the Dockerfile changes.
+
+### Develop a custom Docker Image
+
+The simplest option is to inherit from
+`gitpod/workspace-full`. It already contains all the tools necessary to work with all languages Gitpod supports.
+Also, it has the `gitpod` user set up, which allows for adjusting user settings.
+
+The following example shows a typical Dockerfile inheriting form `gitpod/workspace-full`:
 ```yaml
-image: node:alpine
+FROM gitpod/workspace-full:latest
+
+USER root
+# Install some Ubuntu packages
+RUN apt-get update && apt-get install -y \
+        ... \
+    && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+
+# Set some environment variables or configuraton for the Gitpod user
+USER gitpod
+ENV ...
+
+# Give back control
+USER root
 ```
 
 ### Creating Docker Images for Gitpod
