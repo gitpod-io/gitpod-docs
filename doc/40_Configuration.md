@@ -17,7 +17,7 @@ A workspace gets configured through a `.gitpod` file written in YAML syntax. Her
 
 ```yaml
 # The Docker image to run your workspace in. Defaults to gitpod/workspace-full
-image: <your-workspace-image>
+image: "<your-workspace-image>"
 # Command to start on workspace startup (optional)
 tasks:
   - command: "yarn install && yarn build"
