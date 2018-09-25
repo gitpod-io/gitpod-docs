@@ -13,11 +13,11 @@ Gitpod workspaces come with good defaults, but of course not every workspace loo
 
 ## `.gitpod` File
 
-A workspace gets configured through a `.gitpod` file written in YAML syntax. It has the following structure:
+A workspace gets configured through a `.gitpod` file written in YAML syntax. Here's an example:
 
 ```yaml
-# The Docker image to run your workspace in
-image: gitpod/workspace-full:latest
+# The Docker image to run your workspace in. Defaults to gitpod/workspace-full
+image: <your-workspace-image>
 # Command to start on workspace startup (optional)
 tasks:
   - command: "yarn install && yarn build"
@@ -74,52 +74,34 @@ There are two ways to configure a custom Docker image in your `.gitpod` file:
     ```
     The Docker image is rebuilt automatically whenever the Dockerfile changes.
 
-### Create a Custom Docker Image
+### Creating Docker Images for Gitpod
 
-The simplest option is to inherit from
-`gitpod/workspace-full`. It already contains all the tools necessary to work with all languages Gitpod supports.
+A good starting point for creating custom Docker Images is the
+[`gitpod/workspace-full`](https://hub.docker.com/r/gitpod/workspace-full/) image. It already contains all the tools necessary to work with all languages Gitpod supports.
 
-The following example shows a typical Dockerfile inheriting from `gitpod/workspace-full`:
-```yaml
+```Dockerfile
+FROM gitpod/workspace-full
+
+# install custom tools, runtime, etc.
+```
+
+When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod`.
+
+Switching users in the Dockerfile to `gitpod` requires switching back to `USER root` at the end of the Dockerfile, so that the IDE can start. The following example shows a typical Dockerfile inheriting from `gitpod/workspace-full`:
+```Dockerfile
 FROM gitpod/workspace-full:latest
 
 USER root
-# Install some Ubuntu packages
+# Install custom tools, runtime, etc.
 RUN apt-get update && apt-get install -y \
         ... \
     && apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
 
-# Set some environment variables or configuraton for the Gitpod user
 USER gitpod
+# Apply user-specific settings
 ENV ...
 
 # Give back control
-USER root
-```
-
-### Creating Docker Images for Gitpod
-
-A good starting point for creating custom Docker Images is the `gitpod/workspace-full` image.
-
-```Dockerfile
-FROM gitpod/workspace-full
-
-# install custom tools, runtime, etc.
-```
-
-When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod`. 
-
-Switching users in the Dockerfile to `gitpod` requires switching back to `USER root` at the end of the Dockerfile, so that the IDE can start. 
-
-```Dockerfile
-FROM gitpod/workspace-full
-
-# install custom tools, runtime, etc.
-
-USER gitpod
-
-# apply user-specific settings
-
 USER root
 ```
 
