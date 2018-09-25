@@ -47,6 +47,32 @@ Example:
 image: node:alpine
 ```
 
+### Creating Docker Images for Gitpod
+
+A good starting point for creating custom Docker Images is the `gitpod/workspace-full` image.
+
+```Dockerfile
+FROM gitpod/workspace-full
+
+# install custom tools, runtime, etc.
+```
+
+When you are launching the Gitpod IDE, the local console will use the `gitpod` user, so all local settings, config file, etc. should apply to `/home/gitpod` or be run using `USER gitpod`. 
+
+Switching users in the Dockerfile to `gitpod` requires switching back to `USER root` at the end of the Dockerfile, so that the IDE can start. 
+
+```Dockerfile
+FROM gitpod/workspace-full
+
+# install custom tools, runtime, etc.
+
+USER gitpod
+
+# apply user-specific settings
+
+USER root
+```
+
 ## Exposing Ports
 
 If you want to access services running in your workspace, e.g. a development HTTP server on port `8080`,
