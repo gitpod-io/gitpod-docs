@@ -16,12 +16,12 @@ Gitpod workspaces come with good defaults, but of course not every workspace loo
 A workspace gets configured through a `.gitpod` file written in YAML syntax. It has the following structure:
 
 ```yaml
-# The Docker Image to run your workspace in
+# The Docker image to run your workspace in
 image: gitpod/workspace-full:latest
-# The command to start on workspace startup
+# Command to start on workspace startup (optional)
 tasks:
   - command: "yarn install && yarn build"
-# The ports to open at workspace startup
+# Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
     protocol: "http"
@@ -54,7 +54,7 @@ analyzing your project and using good common defaults.
 If the standard Docker image that is provided by Gitpod does not include all the tools you need for
 developing your project, you can provide a custom Docker image.
 
-### Configure a custom Docker Image
+### Configure a Custom Docker Image
 
 There are two ways to configure a custom Docker image in your `.gitpod` file:
 
@@ -72,15 +72,14 @@ There are two ways to configure a custom Docker image in your `.gitpod` file:
       # Context is optional, defaults to an empty context
       context: docker
     ```
-    The Dockerfile is built automatically and is updated whenever the Dockerfile changes.
+    The Docker image is rebuilt automatically whenever the Dockerfile changes.
 
-### Develop a custom Docker Image
+### Create a Custom Docker Image
 
 The simplest option is to inherit from
 `gitpod/workspace-full`. It already contains all the tools necessary to work with all languages Gitpod supports.
-Also, it has the `gitpod` user set up, which allows for adjusting user settings.
 
-The following example shows a typical Dockerfile inheriting form `gitpod/workspace-full`:
+The following example shows a typical Dockerfile inheriting from `gitpod/workspace-full`:
 ```yaml
 FROM gitpod/workspace-full:latest
 
