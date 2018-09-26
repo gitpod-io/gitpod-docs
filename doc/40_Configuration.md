@@ -113,6 +113,7 @@ you need to expose that port first. Gitpod has two means of doing that:
      if you want to expose that port to the internet.
   2. In your configuration: if you already know that you want a particular port exposed, you can configure
      it in the `.gitpod` file and skip the extra click later on. For example:
+     
 ```yaml
 ports:
   - port: 8080
