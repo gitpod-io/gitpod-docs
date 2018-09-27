@@ -3,6 +3,9 @@
 {% block title %}{{ page.title }}{% endblock %}
 
 {% block head %}
+    <!-- HTTPS redirect -->
+    <script>if(window.location.protocol.startsWith("http:")) { window.location.href = window.location.href.replace("http:", "https:"); }</script>
+    
     <link rel="shortcut icon" href="../imgages/favicon.ico">
 	<!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71727855-2"></script>
@@ -19,8 +22,8 @@
 
         var initGoogleAnalytics = function() {
             window.dataLayer = window.dataLayer || [];
-            function gtag() { 
-                dataLayer.push(arguments); 
+            function gtag() {
+                dataLayer.push(arguments);
             }
             gtag('js', new Date());
             gtag('config', 'UA-71727855-2');
@@ -29,10 +32,10 @@
         var deleteGoogleCookies = function() {
             var cookie = document.cookie
             if (cookie) {
-                cookie.split(";").forEach(function(c) { 
+                cookie.split(";").forEach(function(c) {
                     var trimmed = c.replace(/^ +/, "")
                     if(trimmed.startsWith('_g')) {
-                        document.cookie = trimmed.replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+                        document.cookie = trimmed.replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
                     }
                 });
             }
