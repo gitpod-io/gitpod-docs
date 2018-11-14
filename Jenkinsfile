@@ -1,5 +1,5 @@
 podTemplate(
-    label: 'agent', 
+    label: 'agent',
     cloud: 'kubernetes',
     nodeSelector: 'gitpod.io/jenkins_agents=true',
     containers: [
@@ -24,13 +24,13 @@ podTemplate(
 
             checkout scm
 
-            stage("yarn") {
-                sh("yarn install")
-                sh("yarn run build")
+            stage("mdbook") {
+                sh("cargo install mdbook")
+                sh("mdbook build")
                 archiveArtifacts(artifacts: 'site/**/*')
             }
             stage('check') {
-                sh("npm run do-serve & npm run check")
+                sh("mdbook test")
             }
             if(env.BRANCH_NAME == "published") {
                 stage("gcloud") {

@@ -1,2 +1,4 @@
-node_modules/
-site/
+site
+book
+build
+node_modules
