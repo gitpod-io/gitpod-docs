@@ -102,16 +102,24 @@
                                 <i class="fa fa-search"></i>
                             </button>
                             {{/if}}
-                            <a href="https://github.com/gitpod-io/gitpod-docs/edit/master/src/{{ path }}" target="_blank">
-                                <button id="edited" class="icon-button" type="button" title="Edit on GitHub" aria-label="Edit on GitHub">
-                                    <i class="fa fa-edit"></i>
-                                </button>
-                            </a>
+                            {{#previous}}
+                                <a rel="prev" href="{{ path_to_root }}{{link}}" class="icon-button" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                            {{/previous}}
                         </div>
 
-                        <h1 class="menu-title">{{ book_title }}</h1>
+                        <h1 class="menu-title">{{ title }}</h1>
 
                         <div class="right-buttons">
+                            {{#next}}
+                                <a href="{{ path_to_root }}{{link}}" title="Next chapter" aria-label="Next chapter" class="icon-button">
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            {{/next}}
+                            <a href="https://github.com/gitpod-io/gitpod-docs/edit/master/src/{{ path }}" class="icon-button" target="_blank" title="Edit on GitHub" aria-label="Edit on GitHub">
+                                <i class="fa fa-edit"></i>
+                            </a>
                             <a href="{{ path_to_root }}print.html" title="Print this book" aria-label="Print this book">
                                 <i id="print-button" class="fa fa-print"></i>
                             </a>

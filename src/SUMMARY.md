@@ -1,6 +1,6 @@
 # Contents
 
-  * [Introduction](README.md)
+  * [Introduction](00_Introduction.md)
   * [Getting Started](10_Getting_Started.md)
   * [Browser Extension](20_Browser_Extension.md)
   * [Workspaces](30_Workspaces.md)

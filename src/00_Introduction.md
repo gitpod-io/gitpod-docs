@@ -6,8 +6,8 @@ with a full-featured IDE running in the cloud.
 
 ![](./images/gitpod-logo.svg)
 
-In contrast to traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
-IDE accordingly. For instance, if you are creating a Gitpod workspace from a GitHub pull request,
+Unlike traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
+IDE automatically. For instance, if you are creating a Gitpod workspace from a GitHub pull request,
 the IDE will open in code-review mode.
 
 Also, Gitpod workspaces are meant to be disposable. That is, you do not need to maintain anything.
