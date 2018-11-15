@@ -35,7 +35,7 @@
         <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
         {{/if}}
     </head>
-    <body class="light">
+    <body class="ayu">
         <!-- Provide site root to javascript -->
         <script type="text/javascript">var path_to_root = "{{ path_to_root }}";</script>
 
@@ -76,6 +76,7 @@
             html.classList.add("sidebar-" + sidebar);
         </script>
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <a href="https://gitpod.io"><img src="images/logo.svg" style="max-height:20px; margin-bottom: -10px; margin-left: -205px;"/></a>
             {{#toc}}{{/toc}}
         </nav>
         <div id="page-wrapper" class="page-wrapper">
@@ -90,11 +91,11 @@
                                 <i class="fa fa-paint-brush"></i>
                             </button>
                             <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Dark<span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                                 <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                             </ul>
                             {{#if search_enabled}}
                             <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -138,6 +139,11 @@
                 <div id="content" class="content">
                     <main>
                         {{{ content }}}
+                        <p class="content footer">
+                            Copyright 2018 TypeFox | <a href="https://www.gitpod.io/imprint.html">Imprint</a> |
+                                <a href="https://www.gitpod.io/privacy.html">Privacy</a> |
+                                <a href="https://www.gitpod.io/terms.html">Terms</a>
+                        </p>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
