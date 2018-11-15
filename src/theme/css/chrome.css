@@ -4,10 +4,17 @@
 
 ::-webkit-scrollbar {
     background: var(--bg);
+    width: 6px;
+    height: 6px;
 }
 ::-webkit-scrollbar-thumb {
     background: var(--scrollbar);
 }
+::-webkit-scrollbar-track {
+    width: 10px;
+    height: 10px;
+}
+
 
 #searchresults a,
 .content a:link,
@@ -75,7 +82,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     display: flex;
     margin: 0 5px;
 }
-.no-js .left-buttons { 
+.no-js .left-buttons {
     display: none;
 }
 
@@ -142,7 +149,7 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
     display: none;
 }
 
-.mobile-nav-chapters { 
+.mobile-nav-chapters {
     font-size: 2.5em;
     text-align: center;
     text-decoration: none;
@@ -363,7 +370,7 @@ a:hover {
     background-color: var(--sidebar-spacer);
 }
 
-@media (-moz-touch-enabled: 1), (pointer: coarse) { 
+@media (-moz-touch-enabled: 1), (pointer: coarse) {
     .chapter li a { padding: 5px 0; }
     .spacer { margin: 10px 0; }
 }
