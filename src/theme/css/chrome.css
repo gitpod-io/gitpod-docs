@@ -261,6 +261,10 @@ mark.fade-out {
     box-shadow: 0 0 3px var(--searchbar-shadow-color);
 }
 
+:focus {
+    outline: none;
+}
+
 .searchresults-header {
     font-weight: bold;
     font-size: 1em;
