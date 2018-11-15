@@ -189,7 +189,7 @@
         {{#if livereload}}
         <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
-            var socket = new WebSocket("{{{livereload}}}");
+            var socket = new WebSocket("wss://" + window.location.hostname.replace('3000','3001') + "");
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();

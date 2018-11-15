@@ -2,5 +2,6 @@ image:
   file: Dockerfile
 ports:
 - port: 3000
+- port: 3001
 tasks:
-- command: mdbook serve
+- command: mdbook serve --hostname 0.0.0.0
