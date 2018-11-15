@@ -2,8 +2,8 @@
 
 Go projects need a [specific workspace layout](https://golang.org/doc/code.html#Organization):
 the source code of your repository and its dependencies must be in the directories
-```
-src/<repository provider>/<repository owner>/<repository name>
+```sh
+src/[repository-provider]/[repository-owner]/[repository-name]
 ```
 in the `$GOPATH`. Using the `.gitpod` file, you can bring about such a workspace layout. Here is
 how we do that for the example
