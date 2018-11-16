@@ -38,3 +38,14 @@ simply raise a PR.
 
 If the first two locations do not have a `.gitpod.yml` file for your project, Gitpod will compute one by
 analyzing your project and using good common defaults.
+
+## Creating a Gitpod Config File
+
+Gitpod comes with a cli, that walks you through the initial creation of a `.gitpod.yml` file.
+Open a terminal and type
+```sh
+gp init
+```
+
+It will ask you about the different configuration options and generate and open an initial `.gitpod.yml` file for you.
+You can now edit directly in the file supported by validation, completion and hovers providing information about the various options.
