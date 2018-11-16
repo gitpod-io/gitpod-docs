@@ -60,6 +60,23 @@ a > .hljs {
     }
 }
 
+.menu-header {
+    display: flex;
+    padding-top: 1px;
+    align-items: baseline;
+}
+
+.primary-logo-icon {
+    height: 22px;
+    flex-grow: 2;
+}
+
+.social-icon {
+    margin: 8px;
+    height: 12px;
+    opacity: 0.5;
+}
+
 .icon-button {
     border: none;
     background: none;
