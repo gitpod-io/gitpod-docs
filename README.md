@@ -1,22 +1,14 @@
 # Gitpod Documentation
 
-## Development
+The user's guide for Gitpod using mdbook. Published to https://docs.gitpod.io
+
+[![Open in Gitpod](http://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/gitpod-io/gitpod-docs)
+
+## Build
 ```
-npm install
-npm run serve
+mdbook build && mdbook test
 ```
 
-## Build 
-```
-npm install
-npm run build 
-npm run do-serve &
-npm run check 
-```
-Cleanup: 
-```
-kill -9 `jobs -p "%npm run do-serve"`
-```
 ## Publish
 
 1. push contents to branch "published"
