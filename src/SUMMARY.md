@@ -11,7 +11,7 @@
     * [Gitpod Config File](41_Config_Gitpod_File.md)
     * [Docker Image](42_Config_Docker.md)
     * [Exposing Ports](43_Config_Ports.md)
-    * [Start Script](44_Config_Start_Tasks.md)
+    * [Start Tasks](44_Config_Start_Tasks.md)
     * [Working with Go](45_Config_Go.md)
   * [Theia – Gitpod's IDE](50_IDE.md)
     * [Tips & Tricks](52_Tips_and_Tricks.md)
