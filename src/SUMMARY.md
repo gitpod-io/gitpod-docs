@@ -6,7 +6,7 @@
   * [Workspaces](30_Workspaces.md)
     * [Context URLs](31_Context_Urls.md)
     * [Life of a Workspace](32_Life_of_Workspace.md)
-    * [Shared Workspaces](33_Sharing_and_Collaboration.md)
+    * [Collaboration & Sharing](33_Sharing_and_Collaboration.md)
   * [Configuring Workspaces](40_Configuration.md)
     * [Gitpod Config File](41_Config_Gitpod_File.md)
     * [Docker Image](42_Config_Docker.md)
