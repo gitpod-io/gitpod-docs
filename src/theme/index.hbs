@@ -9,6 +9,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- HTTPS redirect -->
+        <script>if(window.location.protocol.startsWith("http:")) { window.location.href = window.location.href.replace("http:", "https:"); }</script>
+
         <link rel="shortcut icon" href="{{ path_to_root }}{{ favicon }}">
         <link rel="stylesheet" href="{{ path_to_root }}css/variables.css">
         <link rel="stylesheet" href="{{ path_to_root }}css/general.css">
