@@ -15,6 +15,8 @@ by any action in the IDE; moving the mouse is enough. If the IDE is still open, 
 corresponding workspace has stopped, a dialog will pop up that lets you start the workspace
 again.
 
+For convenience, closing the browser window/tab containing the IDE reduces the timeout to 5 minutes.
+
 ## Stop and Archive
 If you want more control over your Gitpod hours, you can stop your workspace explicitly. To
 do so, click on the avatar in the top right and choose the `Stop Workspace` command (also available
