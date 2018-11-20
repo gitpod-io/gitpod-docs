@@ -1,6 +1,6 @@
 # Configuring Workspaces
 
-Workspaces are sztarted with a single click. In order to make sure they come with the tools you need
+Workspaces are started with a single click. In order to make sure they come with the tools you need
 and work correctly you can provide configuration.
 
   * [Gitpod Config File](41_Config_Gitpod_File.md)
