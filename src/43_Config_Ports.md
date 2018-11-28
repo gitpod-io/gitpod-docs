@@ -11,6 +11,29 @@ you need to expose that port first. Gitpod has two means of doing that:
 ports:
   - port: 8080
 ```
+
 Ports are mapped to their own URLs, prefixing the workspace URL with `{portnumber}-`. For instance:
 `https://8080-fe76ea5b-924d-4a67-a2d5-24a259619fa7.ws.gitpod.io/`. At the moment you can only expose
 HTTP servers.
+
+### Configure the Opening Behavior
+
+When a newly started service gets detected, you usually get a notification telling you about it.
+If it is not yet exposed, because it is not listed in the `.gitpod.yml`, the notification will allow you to expose the port.
+If it is already exposed, either through the `.gitpod.yml` or by manually exposing it, the notification asks
+whether and how to open it.
+
+![Ports Notification](./images/ports-notification.png)
+
+To change this behavior you can provide the property `onOpen`.
+It has four possible values:
+
+ - `notify` (default) - Show the notification.
+ - `open-preview` - Open in the preview on the right.
+ - `open-browser` - Open in a browser tab.
+ - `ignore` - Don't do anything.
+
+Any changes to the `.gitpod.yml` will have effect immediately.
+
+ ![Ports Notification](./images/ports-onOpen.png)
+

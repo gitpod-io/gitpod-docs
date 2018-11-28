@@ -14,48 +14,58 @@ tasks:
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
-Let's go through the supported properties:
 
-## command
+## Defining Commands
 
-The mandatory `command` is executed in a new terminal running in a bash. YAML allows to write string values without quotes and
-even has a nice syntax for multi-line strings which comes in handy if you chain mutliple commands using `&&`.
+The `command` property is used to specifiy the command that shall be started on ever start of a workspace.
+It is a bash command and doesn't need to terminate. For instance, you could start a web server or a database.
 
-Here is an example for a multi-line task:
+The script below will start a development-time web server in many npm projects:
 
 ```yaml
 tasks:
-  - command: >
-      cd /workspace/src/github.com/demo-apps/go-gin-app &&
-      go get -v ./... &&
-      go build -o app &&
-      ./app
+  - command: npm run dev
 ```
 
-## cwd
+### `init` command
 
-The optional `cwd` property can be used to specifiy the current working directory.
-The default value is the workspace location, usually `/workspace/<repository-name>`.
+The `init` property can be used to specify shell commands that should only be executed on after a workspace was freshly cloned and needs to be initialized somehow.
+Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not whejn you restart a workspace or start a [snapshot](33_Sharing_anc_Collaborationb.md).
 
-## on
-
-The optional `on` property allows to distinct when a task should be executed. There are two possible values:
-
-`on:init` makes sure to execute a task only on first start of a workspace, but not when restarting one or on snapshot starts.
-Builds are usually a good candidate, especially non-incremental or long running ones, as you don't want to rebuild everything again unneccessarily.
-
-`on:restart` is the opposite and makes sure that the task is only executed on restarts and snapshot workspace starts.
-
-If you leave the `on` property out, the task will be executed in any case.
-
-Here is an example of how a configuration using this feature could look like:
+Here is an example for a node project that makes use of `init`:
 
 ```yaml
-- command: yarn && yarn build && yarn serve
-  on: init
-- command: yarn serve
-  on: restart
+tasks:
+  - init: npm install
+  - command: npm run dev
 ```
+
+This will make sure that `npm install` is executed only on after the repository were cloned, but not when restarting the workspace or starting a snapshot of that workspace.
+
+### `before` command
+
+In case you need to run something even before init, that is a requirement for both `init` and `command`, you can use the `before` property.
+
+```yaml
+tasks:
+  - before: setup.sh
+  - init: npm install
+  - command: npm run dev
+```
+
+Check the table below for an overview of the different starting scenarios.
+
+| Start Mode | Execution |
+| ---------  | -------   |
+| Fresh Workspace | `before && init && command` |
+| Restart Workspace | `before && command` |
+| Snapshot | `before && command` |
+
+### Configuring the Terminal
+
+A task allows to configure where and how the terminal should open using the properties below.
+Please note that this information is used if no previous terminals in the layout exist.
+Snapshots will first try to reuse existing terminals in the layout, before opening new ones based.
 
 ## openIn
 
