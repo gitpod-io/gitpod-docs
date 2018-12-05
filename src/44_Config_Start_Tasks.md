@@ -14,6 +14,12 @@ tasks:
 ```
 
 You can have multiple tasks, which are opened on separated terminals.
+```yaml
+tasks:
+- command: echo Terminal1
+- command: echo Terminal2
+```
+They are started in parallel. See [belows options](#openin) on configuring where and how the terminals are placed in the workbench.
 
 ## Defining Commands
 
@@ -37,7 +43,7 @@ Here is an example for a node project that makes use of `init`:
 ```yaml
 tasks:
   - init: npm install
-  - command: npm run dev
+    command: npm run dev
 ```
 
 This will make sure that `npm install` is executed only on after the repository were cloned, but not when restarting the workspace or starting a snapshot of that workspace.
@@ -49,8 +55,8 @@ In case you need to run something even before init, that is a requirement for bo
 ```yaml
 tasks:
   - before: setup.sh
-  - init: npm install
-  - command: npm run dev
+    init: npm install
+    command: npm run dev
 ```
 
 Check the table below for an overview of the different starting scenarios.
