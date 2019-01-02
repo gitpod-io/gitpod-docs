@@ -5,7 +5,7 @@ the source code of your repository and its dependencies must be in the directori
 ```sh
 src/[repository-provider]/[repository-owner]/[repository-name]
 ```
-in the `$GOPATH`. Using the `.gitpod` file, you can bring about such a workspace layout. Here is
+in the `$GOPATH`. Using the `.gitpod.yml` file, you can bring about such a workspace layout. Here is
 how we do that for the example
 [go-gin-app](https://github.com/gitpod-io/definitely-gp/blob/master/go-gin-app/.gitpod) repository:
 ```yaml

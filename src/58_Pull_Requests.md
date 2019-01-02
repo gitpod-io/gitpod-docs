@@ -19,7 +19,7 @@ In the status bar in the lower left corner, you can see that Gitpod created a lo
 already been filled in as _Fixes..._. This causes GitHub to automatically close the issue once this commit is
 merged.
 
-Additionally, Gitpod has encountered a `.gitpod` file in the repository and runs its
+Additionally, Gitpod has encountered a `.gitpod.yml` file in the repository and runs its
 initialization task. In this example the initialization task builds and starts the app, so that it
 can be tested right away in the `Preview` view.
 
