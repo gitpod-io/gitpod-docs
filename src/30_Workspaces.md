@@ -1,6 +1,6 @@
 # Workspaces
 
-A workspace is what you code in, it consists of the files, configuration and the underlying docker file. Workspace are creaated on the fly driven by
+A workspace is what you code in, it consists of the files, configuration and the underlying docker file. Workspace are created on the fly driven by
 convention and configuration.
 
 A Gitpod workspace can be created from any GitHub project, branch, issue, or pull request. Very
