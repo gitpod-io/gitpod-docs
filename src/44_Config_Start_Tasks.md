@@ -23,7 +23,7 @@ They are started in parallel. See [belows options](#openin) on configuring where
 
 ## Defining Commands
 
-The `command` property is used to specifiy the command that shall be started on ever start of a workspace.
+The `command` property is used to specify the command that shall be run on every start of a workspace.
 It is a bash command and doesn't need to terminate. For instance, you could start a web server or a database.
 
 The script below will start a development-time web server in many npm projects:
@@ -35,8 +35,8 @@ tasks:
 
 ### `init` command
 
-The `init` property can be used to specify shell commands that should only be executed on after a workspace was freshly cloned and needs to be initialized somehow.
-Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not whejn you restart a workspace or start a [snapshot](33_Sharing_anc_Collaborationb.md).
+The `init` property can be used to specify shell commands that should only be executed after a workspace was freshly cloned and needs to be initialized somehow.
+Such tasks are usually builds or downloading dependencies. Anything you only want to do once but not when you restart a workspace or start a [snapshot](33_Sharing_anc_Collaborationb.md).
 
 Here is an example for a node project that makes use of `init`:
 
@@ -46,7 +46,7 @@ tasks:
     command: npm run dev
 ```
 
-This will make sure that `npm install` is executed only on after the repository were cloned, but not when restarting the workspace or starting a snapshot of that workspace.
+This will make sure that `npm install` is executed only after the repository was cloned, but not when restarting the workspace or starting a snapshot of that workspace.
 
 ### `before` command
 
@@ -71,7 +71,7 @@ Check the table below for an overview of the different starting scenarios.
 
 A task allows to configure where and how the terminal should open using the properties below.
 Please note that this information is used if no previous terminals in the layout exist.
-Snapshots will first try to reuse existing terminals in the layout, before opening new ones based.
+Snapshots will first try to reuse existing terminals in the layout, before opening new ones.
 
 ## openIn
 
