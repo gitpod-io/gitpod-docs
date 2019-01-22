@@ -12,8 +12,7 @@ ports:
   - port: 8080
 ```
 
-Ports are mapped to their own URLs, prefixing the workspace URL with `{portnumber}-`. For instance:
-`https://8080-fe76ea5b-924d-4a67-a2d5-24a259619fa7.ws.gitpod.io/`. At the moment you can only expose
+Ports are mapped to their own URLs. In a workspace you can get the URL mapped to a port using `gp url <port>`. At the moment you can only expose
 HTTP servers.
 
 ### Configure the Opening Behavior

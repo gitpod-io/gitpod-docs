@@ -18,3 +18,4 @@ In Gitpod workspaces usually have a very short life. Gitpod creates one when you
     * [Stop and Archive](32_Life_of_Workspace.md#stop-and-archive)
     * [Changes Are Saved](32_Life_of_Workspace.md#changes-are-saved)
   * [Shared Workspaces](33_Sharing_and_Collaboration.md)
+  * [Command Line Interface](34_Command_Line_Interface.md)
