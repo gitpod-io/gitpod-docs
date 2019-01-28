@@ -34,6 +34,15 @@ We have also added common aliases for `gp open`: `code` and `open`.
 ## URL
 Gitpod workspaces can expose services to the internet. `gp url` provides the URL which points to a service served from a Gitpod workspace. For example `gp url 8080` prints the URL which points to the service listening on port 8080 in this current workspace.
 
+You can combine the `preview`and the `url` command to open a certain path instead of the default URL.
+
+For instance:
+```sh
+gp preview $(gp url 3000)my/path/index.html
+```
+
+If you put this into the `.gitpod.yml` to open the a certain page on startup, don't forget to [ignore the default action](43_Config_Ports.md) when the port opens.
+
 ## Forward Port
 In Gitpod services/servers running on a port need to be _exposed_ before they become accessible from the internet. This process only works with services listening on `0.0.0.0` and not just `localhost`.
 Sometimes it is not possible to make a server listen on `0.0.0.0`, e.g. because it is not your code and there are simply no means of configuration.
