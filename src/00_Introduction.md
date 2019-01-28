@@ -33,7 +33,7 @@ Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastruc
 ![Gitpod Cluster Map](./images/gitpod-clusters.jpg)
 
 When starting a workspace, Gitpod will automatically pick the cluster that is closest to your location and
-start a Kubernetes pod in it. The respective git repository gets cloned and the branch you need is checked out.
+start a Kubernetes pod in it. The requested git repository gets cloned and the branch you need is checked out.
 Furthermore, Gitpod runs any scripts that are configured for that git repository state.
 
 Learn more about how to configure your GitHub repository [here](40_Configuration.md).
