@@ -1,10 +1,16 @@
 # Introduction
 
-[Gitpod](https://www.gitpod.io) is an online IDE that integrates with code hosting platforms such
-as GitHub, GitLab and Bitbucket. With a single click it creates ready-to-use developer workspaces
-with a full-featured IDE running in the cloud.
+[Gitpod](https://www.gitpod.io) is frictionless coding.
 
-![](./images/gitpod-logo.svg)
+Whether you just want to hack, have code to review or feel like trying something new on
+GitHub, Gitpod beams you right into a ready-to-code dev environment with a single click.
+
+Because Gitpod is based on OSS tech like VS Code, Docker and Kubernetes, it is familiar,
+comprehensive, extensible, and easy to use. With deep GitHub integration, tools for
+sharing, and a focus on usability, Gitpod contains your entire dev workflow in a
+browser tab.
+
+![](./images/gitpod-prefix.png)
 
 Unlike traditional cloud and desktop IDEs, Gitpod understands the context and prepares the
 IDE automatically. For instance, if you are creating a Gitpod workspace from a GitHub pull request,
@@ -19,3 +25,15 @@ builds upon mature technologies such as TypeScript, VS Code, Webpack, and Node.j
 
 This site provides all the details on how to use Gitpod and Theia. If you have questions
 or want discuss something, please join the [Gitpod community on Spectrum](https://spectrum.chat/gitpod).
+
+## Architecture
+
+Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastructure in 3 different regions:
+
+![Gitpod Cluster Map](./images/gitpod-clusters.jpg)
+
+When starting a workspace, Gitpod will automatically pick the cluster that is closest to your location and
+start a Kubernetes pod on it. The respective git repository gets cloned and the branch you need is checked out.
+Furthermore, Gitpod runs any scripts that are configured for that git repository state.
+
+Learn more about how to configure your GitHub repository [here](40_Configuration.md).

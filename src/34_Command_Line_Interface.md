@@ -1,7 +1,7 @@
 # Command Line Interface
 
 Gitpod sports a command line interface that is available in each workspace terminal called `gp`:
-```
+```text
 Command line interface for Gitpod
 
 Usage:
