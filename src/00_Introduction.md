@@ -28,7 +28,7 @@ or want discuss something, please join the [Gitpod community on Spectrum](https:
 
 ## Architecture
 
-Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastructure in 3 different regions:
+Gitpod.io runs in multiple Kubernetes clusters hosted on Google Cloud infrastructure in three different regions:
 
 ![Gitpod Cluster Map](./images/gitpod-clusters.jpg)
 
