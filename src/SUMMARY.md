@@ -8,7 +8,7 @@
     * [Life of a Workspace](32_Life_of_Workspace.md)
     * [Collaboration & Sharing](33_Sharing_and_Collaboration.md)
     * [Command Line Interface](34_Command_Line_Interface.md)
-  * [Configuring Workspaces](40_Configuration.md)
+  * [Configure Your Repository](40_Configuration.md)
     * [Gitpod Config File](41_Config_Gitpod_File.md)
     * [Docker Image](42_Config_Docker.md)
     * [Exposing Ports](43_Config_Ports.md)
