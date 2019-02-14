@@ -69,7 +69,7 @@ Gitpod now understands YAML syntax and uses json schema specifications to valida
 
 The CLI for Gitpod has learned new tricks. Check out all the cool things you can do with it by typing `gp help`.
 
-Here are the new commands we've added:
+Here are the new commands we added:
 
 ### gp init
 
