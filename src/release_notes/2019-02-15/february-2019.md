@@ -117,7 +117,7 @@ gp preview $(gp url 3000)my/special/path.html
 
 ## Improved Docker Performance
 
-In addition to the `.gitpod.yml` you can provide a `Dockerfile` which is automatically picked up by Gitpod. See [this blog post](https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861de) for more informtion on Dockerfiles.
+In addition to the `.gitpod.yml` you can provide a `Dockerfile` which is automatically picked up by Gitpod. See [this blog post](https://medium.com/gitpod/bring-your-own-docker-image-to-gitpod-52db1aa861de) for more information on setting up a Dockerfile for your project.
 
 Since we launched this feature, the performance and logging for docker builds have also been improved significantly.
 
