@@ -8,7 +8,7 @@ So here are the new & noteworthy things that we have been hard at work at this t
 
 ## GitHub Navigation
 
-You can now navigate to GitHub from any file or editor. The corresponding GitHub URL for a given editor position can be copied to the cliboard so it can be used e.g. in GitHub issues or Pull Request comments.
+You can now navigate to GitHub from any file or editor. The corresponding GitHub URL for a given editor position can be copied to the clipboard so it can be used e.g. in GitHub issues or Pull Request comments.
 
 ![Navigate GitHub](./img/github-navi.jpg)
 
