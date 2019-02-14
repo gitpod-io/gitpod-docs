@@ -24,9 +24,9 @@ Please see this [blog post](https://medium.com/gitpod/code-never-lies-creating-r
 
 ## Configuration
 
-The possibilities to fine-tune the developer experience when using Gitpod on your repository have been expanded with new features for your `.gitpod.yml`:
+The possibilities to fine-tune the developer experience when using Gitpod on your repository have been improved. Here are the features you can define in your `.gitpod.yml`:
 
-### Multiple Tasks
+### Tasks
 You can now specify multiple tasks. Each task will have its own terminal view on start. You can even specify where those terminals whould be opened.
 The following config, for instance, will make sure that two terminals are opened next to each other.
 
