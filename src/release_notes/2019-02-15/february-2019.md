@@ -47,7 +47,7 @@ In addition we have introduced multiple lifecycle phases for the tasks. The main
 
 You can now specify the default behavior on port detection. By default users get a notification when starting a server, asking whether they want to open a web view or an external browser.
 
-This behavior can no be configured so users are not bothered with annoying notifications.
+This behavior can now be configured so users are not bothered with annoying notifications.
 
 Check out [the docs](https://docs.gitpod.io/44_Config_Start_Tasks.html) for all the possibilities.
 
