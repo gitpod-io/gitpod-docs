@@ -16,7 +16,7 @@ You can now navigate to GitHub directly from the editor. The GitHub URL of any e
 
 In addition to live sharing a running Gitpod workspace, you can now take a snapshot. Snapshots capture the current state of a workspace session including the UI layout and the file changes. Anyone who has a snapshot link can create a fresh workspace based on that.
 
-This is super handy for providing reproducibles in GitHub issues and StackOverflow posts. They are also great to prepare trainigs, tutorials, or just to showcase stuff that you have thrown together.
+This is super handy for providing reproducibles in GitHub issues and StackOverflow posts. They are also great to prepare trainigs, tutorials, or just to showcase stuff you have thrown together.
 
 Please see this [blog post](https://medium.com/gitpod/code-never-lies-creating-reproducibles-for-any-programming-language-7946021a68f2) as well as our [documentation](https://docs.gitpod.io/33_Sharing_and_Collaboration.html#sharing-snapshots) for more details.
 
