@@ -123,7 +123,7 @@ Since we launched this feature, the performance and logging for docker builds ha
 
 ## Java Debugging
 
-In addition to Node.js one can now also launch and debug Java applications from within the editor. Code lense actions on `main()` methods will automatically use the right classpath from the current project's settings (based on maven, gradle or eclipse classpath information).
+In addition to Node.js one can now also launch and debug Java applications directly from within the editor. Code lense actions on `main()` methods will automatically use the right classpath from the current project settings (based on maven, gradle or eclipse classpath information).
 
 Launch configs are stored in a VS Code compatible `launch.json` file.
 
