@@ -8,7 +8,7 @@ So here are the new & noteworthy things that we have been hard at work at this t
 
 ## GitHub Links
 
-You can now navigate to GitHub directly from the editor. The GitHub URL of any editor position or selection can be accessed with a right-click, and used e.g. in GitHub issues or Pull Request comments to reference interesting code locations.
+You can now navigate to GitHub directly from the editor. The GitHub URL of any editor position or selection can be accessed with a right-click, and used for example in GitHub issues or Pull Request comments to reference interesting code locations.
 
 ![GitHub Links](./img/github-navi.jpg)
 
