@@ -1,7 +1,6 @@
 [book]
 authors = ["Sven Efftinge"]
 multilingual = false
-src = "src"
 title = "Gitpod Documentation"
 
 [output.html]
@@ -12,4 +11,3 @@ google-analytics = "UA-71727855-2"
 build-dir = "site/doc"
 create-missing = false
 preprocess = ["links", "index"]
-

@@ -22,3 +22,5 @@
     * [Code Reviews](59_Code_Reviews.md)
   * [Dashboard](60_Dashboard.md)
   * [Subscriptions](70_Subscriptions.md)
+  * [Release Notes](80_Release_Notes.md)
+    * [February 2019](release_notes/2019-02-15/february-2019.md)
