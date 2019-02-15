@@ -55,7 +55,13 @@ Check the table below for an overview of the different starting scenarios.
 
 You can now specify the default behavior on port detection. By default users get a notification when starting a server, asking whether they want to open a web view or an external browser.
 
-This behavior can now be pre-configured so users are not bothered with annoying notifications.
+This behavior can now be pre-configured so users are not bothered with annoying notifications. Here is an example where we configure port `8080` to automatically open in a web preview pane:
+
+```yaml
+ports:
+ - port: 8080
+   onOpen: open-preview
+```
 
 Check out [the docs](https://docs.gitpod.io/44_Config_Start_Tasks.html) to learn more about pre-configuring things in Gitpod.
 
