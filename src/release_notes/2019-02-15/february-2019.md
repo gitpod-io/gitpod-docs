@@ -139,8 +139,6 @@ Since we launched this feature, the performance and logging for docker builds ha
 
 As we continuously improve and expand Gitpod, there are times when things inevitably don't go as planned, occasionally causing downtime. If you're ever curious about the status of [gitpod.io](https://gitpod.io), or you'd like to follow how we resolve an incident, we made [status.gitpod.io](https://status.gitpod.io/) just for you.
 
-![Gitpod Status](img/gitpod-status.png)
-
 In fact, thanks to [Statusfy](https://github.com/bazzite/statusfy), it took us just a few hours to build an entire [open source status page](https://github.com/gitpod-io/gitpod-status). Learn more about this short adventure in [this blog post](https://medium.com/gitpod/status-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20).
 
 ## Java Debugging
