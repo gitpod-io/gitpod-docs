@@ -127,7 +127,7 @@ As we continuously improve and expand Gitpod, there are times when things inevit
 
 ![Gitpod Status](img/gitpod-status.png)
 
-In fact, thanks to [Statusfy](https://github.com/bazzite/statusfy), it took us just a few hours to build an entire [open source](https://github.com/gitpod-io/gitpod-status) status page. Learn more about this short adventure in [this blog post](https://medium.com/gitpod/status-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20).
+In fact, thanks to [Statusfy](https://github.com/bazzite/statusfy), it took us just a few hours to build an entire [open source status page](https://github.com/gitpod-io/gitpod-status). Learn more about this short adventure in [this blog post](https://medium.com/gitpod/status-update-gitpod-%EF%B8%8F-statusfy-ed8266d63a20).
 
 ## Java Debugging
 
