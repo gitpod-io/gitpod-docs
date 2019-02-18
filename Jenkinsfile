@@ -39,6 +39,7 @@ podTemplate(
         container('mdbook') {
             stage("mdbook") {
                     sh("mdbook build")
+                    sh("cp -r src/* site/doc/")
                     archiveArtifacts(artifacts: 'site/**/*')
             }
             stage('check') {
