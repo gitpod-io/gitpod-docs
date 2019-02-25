@@ -11,5 +11,5 @@ mdbook build && mdbook test
 
 ## Publish
 
-1. push contents to branch "published"
+1. push contents to branch "master"
 2. this will trigger an internal job that runs the build commands and makes the generated documentation available on https://docs.gitpod.io/

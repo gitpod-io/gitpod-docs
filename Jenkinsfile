@@ -47,7 +47,7 @@ podTemplate(
             }
         }
         container('devenv') {
-            if(env.BRANCH_NAME == "published") {
+            if(env.BRANCH_NAME == "master") {
                 stage("gcloud") {
                     withCredentials([file(credentialsId: 'gitpod-publish-static-web-pages', variable: 'gkey')]) {
                         sh('gcloud auth activate-service-account --key-file=${gkey}')
