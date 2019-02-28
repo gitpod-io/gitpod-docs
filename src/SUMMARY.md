@@ -14,6 +14,7 @@
     * [Exposing Ports](43_Config_Ports.md)
     * [Start Tasks](44_Config_Start_Tasks.md)
     * [Working with Go](45_Config_Go.md)
+    * [Prebuilt Workspaces](46_Prebuilds.md)
   * [Theia – Gitpod's IDE](50_IDE.md)
     * [Tips & Tricks](52_Tips_and_Tricks.md)
     * [Git Integration](54_Git.md)
