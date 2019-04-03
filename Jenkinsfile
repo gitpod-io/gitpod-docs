@@ -40,6 +40,7 @@ podTemplate(
             stage("mdbook") {
                     sh("mdbook build")
                     sh("cp -r src/* site/doc/")
+                    sh("./redirect.sh")
                     archiveArtifacts(artifacts: 'site/**/*')
             }
             stage('check') {
@@ -60,4 +61,3 @@ podTemplate(
         }
     }
 }
-
